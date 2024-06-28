@@ -1,5 +1,5 @@
 # LowkieMan
-I am an Electrical and Electronics Engineer. Specializes in Power Systems, Building Services and Protection design, Programming and Web Devekoper
+I am an `Electrical and Electronics Engineer`. Specializes in `Power Systems`, `Building Services and Protection design`, `Programming` and `Web Developer`
 
 ## Contact Me 
 - For Collaboration reach me through:
