@@ -7,8 +7,6 @@ I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Syste
 Did android calculator UI/UX interface. Have a look [Here]()
 </p>
 
-
-
 ## Contact Me 
 - For Collaboration reach me through: <br>
 [<img src="https://th.bing.com/th/id/R.6f9a03bd4554e5454de1c79f4c91aadf?rik=0c%2fLPEw2uBblNg&pid=ImgRaw&r=0" style="width:30px; height:30px; border-radius:20px;">](https://www.linkedin.com/in/wilfredtinega)
