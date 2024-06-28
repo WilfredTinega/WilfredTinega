@@ -1,6 +1,14 @@
 # LowkieMan
 I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Systems`**, **`Building Services and Protection design`**, **`Programming`** and **`Web Developer`**
 
+## Project Done
+<p>Currently I'm building a Murang'a University of Technology student and employee UI/UX. Have a look [here]() </p>
+<p>
+Did android calculator UI/UX interface. Have a look [Here]()
+</p>
+
+
+
 ## Contact Me 
 - For Collaboration reach me through: <br>
 [<img src="https://th.bing.com/th/id/R.6f9a03bd4554e5454de1c79f4c91aadf?rik=0c%2fLPEw2uBblNg&pid=ImgRaw&r=0" style="width:30px; height:30px; border-radius:20px;">](https://www.linkedin.com/in/wilfredtinega)
