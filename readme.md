@@ -2,9 +2,9 @@
 I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Systems`**, **`Building Services and Protection design`**, **`Programming`** and **`Web Developer`**
 
 ## Project Done
-<p>Currently I'm building a Murang'a University of Technology student and employee UI/UX. Have a look [here]() </p>
+<p>Currently I'm building a Murang'a University of Technology student and employee UI/UX. Have a look [here](https://mutportal.netlify.app) </p>
 <p>
-Did android calculator UI/UX interface. Have a look [Here]()
+Did android calculator UI/UX interface. Have a look [Here](https://calonepointzero.netlify.app)
 </p>
 
 ## Contact Me 
