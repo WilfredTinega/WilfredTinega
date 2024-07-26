@@ -8,6 +8,14 @@ I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Syste
 
 - android calculator UI/UX interface. Have a look [Here](https://calonepointzero.netlify.app)
 
+## Stacks
+![<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-4tA2Z9fjwRXFlKjO6MWVGpNERGVU-ryTMg&s" style="width:30px; height:30px; border-radius:20px; background-color: green;">]()
+![<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS7r-Sa24YZ1zDe2mjoORMhDDG1vPtVBM4Lg&s" style="width:30px; height:30px; border-radius:20px; background-color: green;">]()
+![<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcUPgNYOT7Djx4OvGjnIbSf7G46sKgXYSHA&s" style="width:30px; height:30px; border-radius:20px; background-color: green;">]()
+![<img src="https://e7.pngegg.com/pngimages/394/264/png-clipart-bootstrap-logo-landscape-tech-companies.png" style="width:30px; height:30px; border-radius:20px; background-color: green;">]()
+![<img src="" style="width:30px; height:30px; border-radius:20px; background-color: green;">]()
+![<img src="" style="width:30px; height:30px; border-radius:20px; background-color: green;">]()
+
 ## Contact Me 
 - For Collaboration reach me through: <br>
 [<img src="https://th.bing.com/th/id/R.6f9a03bd4554e5454de1c79f4c91aadf?rik=0c%2fLPEw2uBblNg&pid=ImgRaw&r=0" style="width:30px; height:30px; border-radius:20px;">](https://www.linkedin.com/in/wilfredtinega)
