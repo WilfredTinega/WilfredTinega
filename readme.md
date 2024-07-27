@@ -1,4 +1,5 @@
-# LowkieMan
+# LowkieMan ![](https://komarev.com/ghpvc/?username=lowkieman&color=brightgreen)
+
 I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Systems`**, **`Building Services and Protection design`**, **`Programming`** and **`Web Developer`**
 
 ## Project Done
@@ -15,8 +16,6 @@ I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Syste
 [<img src="https://e7.pngegg.com/pngimages/394/264/png-clipart-bootstrap-logo-landscape-tech-companies.png" style="width:40px; height:40px; border-radius:20px; background-color: green;">]()
 [<img src="" style="width:30px; height:40px; border-radius:40px;">]()
 [<img src="" style="width:30px; height:40px; border-radius:40px;">]()
-
-![](https://komarev.com/ghpvc/?username=lowkieman&color=brightgreen)
 
 ## Contact Me 
 - For Collaboration reach me through: <br>
