@@ -3,9 +3,10 @@
 I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Systems`**, **`Building Services and Protection design`**, **`Programming`** and **`Web Developer`**
 
 ## Project Done
-- Currently building a replica website for The room Member fellowship by ALX africa...
-- Murang'a University of Technology student and employee UI/UX. Have a look 
-[here](https://mutportal.netlify.app)
+
+- Currently building a replica website for The room Member fellowship by ALX africa. Check the progress `[here](https://membertheroom.netlify.app)`
+
+- Murang'a University of Technology student and employee UI/UX. Have a look [here](https://mutportal.netlify.app)
 
 - android calculator UI/UX interface. Have a look [Here](https://calonepointzero.netlify.app)
 
