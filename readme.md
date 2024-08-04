@@ -11,9 +11,9 @@ I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Syste
 - android calculator UI/UX interface. Have a look [Here](https://calonepointzero.netlify.app)
 
 ## Stacks
-[<img src="https://shorturl.at/3x09e" style="width:120px; height:40px; border-radius:20px; background-color: green;">]()
-[<img src="https://shorturl.at/1cjM3" style="width:30px; height:40px; border-radius:40px;">]()
-[<img src="https://shorturl.at/XG6Vw" style="width:30px; height:40px; border-radius:40px;">]()
+[<img src="https://shorturl.at/3x09e" style="width:120px; height:40px; border-radius:20px; background-color: white;">]()
+[<img src="https://shorturl.at/XG6Vw" style="width:40px; height:40px; border-radius:40px; background-color: white;">]()
+[<img src="https://shorturl.at/1cjM3" style="width:40px; height:40px; border-radius:40px; background-color: white;">]()
 
 ## Contact Me 
 - For Collaboration reach me through: <br>
