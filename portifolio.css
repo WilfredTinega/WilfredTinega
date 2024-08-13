@@ -1,0 +1,555 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*HEADER*/
+header{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
+    position: fixed;
+    top: 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 10vh;
+}
+
+#title1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    width: 50%;  
+}
+
+#title1 #showNav{
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#title1 #hideNav{
+    position: absolute;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+#title1 a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 0px white,-2px 0px blue,0px -1px aqua;
+    width: auto;
+}
+
+#lists{
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+/*MAIN*/
+main{
+    margin: 10vh 0 0 0;
+    padding: 0 0 20px 0;
+    width: 100%;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+/*LANDING PAGE*/
+#landing{
+    margin: 5vh auto;
+    padding: 2vh;
+    width: 80%;
+    background-image: inherit;
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 20px;
+    color: gold;
+    height: 100%;
+}
+
+#landing h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#landing p{
+    margin: 0 auto;
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#landing button{
+    text-transform: capitalize;
+    border: none;
+    background-color: black;
+    box-shadow: 1px 1px 10px white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#landing button:hover{
+    box-shadow: 2px 2px 10px rgb(15, 228, 15);
+    background-color: yellow;
+    color: black;
+}
+
+/*ABOUT*/
+#about{
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    background-image: inherit;
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+}
+#about h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+#about-content{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: black;
+}
+#about-content img{
+    margin: 0 auto;
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;  
+}
+#about-content img:hover{
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 3px;    
+}
+#a2{
+    margin: 0 auto;
+    width: 55%;
+    background-color: aliceblue;
+    border-radius: 10px; 
+    padding: 50px 20px;
+    font-size: 30px;
+    word-spacing: 3px;
+}
+#a2:hover{
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 3px;
+    background-color: teal;
+    color: white;
+}
+i{
+    font-weight: bold;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+/*EXPERIENCE*/
+#experience{
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    background-image: inherit;
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+}
+#experience h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+#experience-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+    
+#experience1{
+    width: 20%;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+}
+#experience1 div{
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+#type{
+    display: none;
+}
+#experience1 img{
+    width: 100%;
+    height: 200px;
+}
+
+/*EDUCATION*/
+#education{
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    border: none;
+    border-radius: 20px; 
+    height: 100%;  
+}
+#education h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+#education-content{
+    display: flex;
+    justify-content: center;
+
+}
+#education-content #education1{
+    width: 20%;
+    margin: 10px;
+    background-color: teal;
+    font-weight: bold;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+#education1 img{
+    width: 100%;
+    height: 200px;
+}
+
+/*SKILLS*/
+#skills{
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    background-image: inherit;
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+}
+#skills h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+#skills-content{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+#skills1{
+    width: 30%;
+    background-color: teal;
+    margin: 20px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    padding: 30px;
+    border: none;
+    border-radius: 10px/60%;
+}
+#skills1 ul{
+    list-style-type: disc;
+    display: block;
+}
+h4{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+#skills1:hover{
+    background-color: aliceblue;
+    color: black;
+    transition-duration: 2s;
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 2px;
+
+}
+#skills1:hover h4{
+    color: red;
+}
+
+/*PROJECTS*/
+#project{
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    background-image: inherit;
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+}
+#project h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+#project-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+ 
+}
+#project1{
+    width: 500px;
+    background-color: teal;
+    margin: 20px;color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#project1 p{
+    padding: 10px;
+}
+iframe{
+    width: 100%;
+    height: 280px;
+    outline: none;
+    border: none;
+}
+
+/*CONTACT*/
+#contact{
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    background-image: inherit;
+    background-size: 100% 100%;
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+}
+#contact h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 60px;
+}
+#contact-content{
+    display: flex;
+    justify-content: center;   
+}
+
+#contact h3{
+    padding-top: 140px;
+}
+
+/*FLOATING HIRE*/
+#floating-anime{
+    margin: 0 auto;
+    background-size: 98% 98%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: aliceblue;
+    display: flex;
+}
+
+#floating-anime div{
+    padding: 10px;
+    margin: 5px 10px;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#floating-anime1{
+    animation-name: myanime1;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#floating-anime2{
+    animation-name: myanime2;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+#floating-anime div a{
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#floating-anime div a:hover{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+#floating-anime div:hover{
+    border: none;
+    outline-style: solid;
+    outline-color: orange;
+    outline-width: 2px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    color: black;
+}
+#floating-anime1:hover,#floating-anime2:hover{
+    animation: none;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: rgb(58, 44, 44);
+    color: white;
+    padding: 10px;
+    text-transform: capitalize;
+    font-family:monospace;
+    font-size: 19px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+footer p{
+    width: 50%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+footer ul li a i{
+    background-color: inherit;
+    color: white;
+    padding: 5px;
+    text-align: right;
+}
+/*ANIMATION*/
+@keyframes myanime1{
+    0%{
+        bottom: 40px;
+        right: 0;
+        opacity: 0;
+        background-color: black;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;    
+    } 
+    30%{
+        bottom: 40px;
+        right: 0;
+    }
+    40%{
+        bottom: 40px;
+        right: 0;
+    }
+    50%{
+        bottom: 40px;
+        right: 0;
+
+    }
+    60%{
+        bottom: 40px;
+        right: 0;
+    }
+    70%{
+        bottom: 40px;
+        right: 0;
+    }
+    80%{
+        bottom: 40px;
+        right: 0;
+    }
+    90%{
+        bottom: 40px;
+        right: 0;
+    }
+    100%{
+        bottom: 40px;
+        right: 0;
+    }
+    
+}
+
+@keyframes myanime2{
+    0%{
+        bottom: 40px;
+        right: 0;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;
+    }
+    20%{
+        bottom: 40px;
+        right: 0;    
+    } 
+    30%{
+        bottom: 40px;
+        right: 0;
+    }
+    40%{
+        bottom: 40px;
+        right: 0;
+    }
+    50%{
+        bottom: 40px;
+        right: 0;
+    }
+    60%{
+        bottom: 40px;
+        right: 0;
+    }
+    70%{
+        bottom: 40px;
+        right: 0;
+    }
+    80%{
+        bottom: 40px;
+        right: 0;
+    }
+    90%{
+        bottom: 40px;
+        right: 0;
+        opacity: 0;
+        background-color: black;
+    }
+    100%{
+        bottom: 40px;
+        right: 0;
+    }
+    
+}

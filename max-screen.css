@@ -1,0 +1,315 @@
+@media screen and (max-width:425px) {
+    *{
+        box-sizing: border-box;
+
+    }
+    
+    html{
+        margin: 0;
+        padding: 0;
+        border: 4px solid red;
+        overflow-y: hidden;
+        height: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /*HEADER*/
+    header{
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        display: block;
+        height: 8vh;
+    }
+
+    #title1{
+        margin: 0 auto;
+        text-align: left;
+        padding: 0;
+        width: 100%; 
+        display: block;
+    }
+
+    #title1 a{
+        margin-left: 15%;
+        padding: 2px;
+        color: red;
+        display: inline-block;
+        font-size: 25px;
+        width: auto;
+        height: inherit;
+    }
+
+    #lists{
+        margin: 0 auto;
+        padding: 0;
+        background-image: inherit;
+        width: 50%;
+        position: fixed;
+        height: 100%;
+        left: -50%;
+        transition-duration: 1s;
+        top: 8vh;
+        background-color: red;
+    }
+
+    #lists ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    #lists ul li a{
+        margin: 0 auto;
+        display: block;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 5px;
+        color: white;
+        font-weight: bold;
+        width: 100%; 
+    }
+
+    #lists ul li a:hover{
+        background-color: black;
+    }
+
+    /*MAIN*/
+    main{
+        margin: 10vh 0 0 0;
+        background-size: 100% 100%;
+        padding: 0 0 0.8vh 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        border: 2px solid green;
+    }
+
+    #landing{
+        margin: 0.5vh auto;
+        padding: 0.25vh;
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    #about{
+        margin: 0.5vh auto;
+        padding: 0.25vh;
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+
+    #about h1{
+        margin: 0px;
+        padding: 10px;
+        font-size: 30px;
+    }
+    #about-content{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 2vh 0 0 0;
+    }
+
+    #about-content #a1{
+        margin: 0 auto;
+        width: 100%;
+        height: 300px;
+        display: block;
+        border: none;
+        border-radius: 0;
+    }
+
+    #about-content #a2{
+        width: 100%;
+        padding: 20px 10px 10px 20px;
+        margin: 0 auto;
+        height: auto;
+        border-radius: 0 0 10px 10px;
+        font-size: 16px;
+        text-wrap: wrap;
+    }
+
+    #about-content #a1:hover,#about-content #a2:hover{
+        outline: none;
+    }
+
+    #experience{
+        background-image: inherit;
+        width: 90%;
+        height: auto;
+        margin: 5vh auto;
+        padding: 5vh 0 5vh 0;
+    }
+
+    #experience h1{
+        font-size: 30px;
+    }
+
+    #experience #experience-content{
+        display: block;
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    #experience1{
+        display: flex;
+        width: 90%;
+        margin: 10px auto;
+        padding: 0;
+        border-radius: 10px;
+    }
+
+    #experience #experience-content #experience1 img{
+        height: inherit;
+        width: 60px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #experience #experience-content #experience1 div{
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    #education{
+        margin: 8.5vh auto;
+        height: auto;
+    }
+
+    #education h1{
+        font-size: 30px;
+    }
+
+    #education-content{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    #education-content #education1{
+        display: flex;
+        margin: 2.5vh auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+    #education-content #education1 img{
+        height: inherit;
+        width: 60px;
+        border-radius: 10px 0 0 10px;
+    }
+    #education-content #education1 div{
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    #skills{
+        width: 95%;
+        padding: 1vh;
+        margin: 3.5vh auto;
+        height: auto;
+    }
+    #skills h1{
+        font-size: 30px;
+    }
+    #skills-content{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        font-size: 12px;
+    }
+    #skills-content #skills1{
+        width: 95%;
+        margin: 5px auto;
+        padding: 0 0 1px 0;
+    }
+    #skills-content #skills1 h4{
+        font-size: 15px;
+    }
+
+    #project{
+        margin: 0vh 0 1vh 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+    }
+
+    #project h1{
+        font-size: 30px;
+    }
+
+    #project-content{
+        display: block;
+        width: 100%;
+    }
+
+    #project1{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #project1 p{
+        font-size: 12px;
+    }
+
+    iframe{
+        width: 100%;
+        height: 200px;
+    }
+    
+    #contact{
+        display: block;
+        margin: 19vh auto;
+        padding: 0;
+        width: 95%;
+        height: auto;
+    }
+    #contact h1{
+        font-size: 6vh;
+    }
+    #contact-content{
+        display: block;
+        padding: 2vh;
+    }
+    #floating-anime{
+        display: block;
+        width: 100%;
+        font-size: 4vh;
+    }
+
+    #experience,#education,#skills,#project,#contact{
+        position: static;
+        display: block;
+    }
+
+    /*FOOTER*/
+    footer{
+        font-size: 15px;
+        width: 100%;
+        display: block;
+        height: 12%;
+    }
+
+    footer p{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        flex-wrap: wrap;
+        font-size: larger;
+}
+}
