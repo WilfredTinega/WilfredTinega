@@ -4,40 +4,30 @@
 html,body{
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
 }
 
 /*HEADER*/
 header{
     margin: 0 auto;
     padding: 0;
-    width: 100%;
-    display: flex;
-    background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6z?ver=eddc");
     position: fixed;
     top: 0;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
     height: 10vh;
+    width: 100%;
+    background-color: black;
 }
 
 #title1{
     margin: 0 auto;
     text-align: center;
     padding: 0;
-    width: 50%;  
+    width: 50%;
 }
 
-#title1 #showNav{
-    position: absolute;
-    left: 10px;
-    font-size: 30px;
-    color: white;
-}
-
-#title1 #hideNav{
+#title1 .bi-list,.bi-x{
     position: absolute;
     left: 10px;
     font-size: 30px;
@@ -50,78 +40,138 @@ header{
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 2px 0px white,-2px 0px blue,0px -1px aqua;
     width: auto;
+    font-size: 45px;
 }
 
 #lists{
     margin: 0 auto;
     padding: 0;
+    width: 50%;
+}
 
+#lists ul{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    height: 100%;
+}
+
+#lists ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+    display: block;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+#lists ul li a:hover{
+    color: wheat;
+    opacity: 1;
 }
 
 /*MAIN*/
 main{
     margin: 10vh 0 0 0;
-    padding: 0 0 20px 0;
+    padding: 0;
+    background-color: rgb(89, 121, 89);
+    display: block;
     width: 100%;
-    background-attachment: fixed;
     height: 100%;
+    position: fixed;
 }
 
 /*LANDING PAGE*/
 #landing{
-    margin: 5vh auto;
-    padding: 2vh;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
-    border-radius: 20px;
-    color: gold;
-    height: 100%;
+    margin: 10px auto;
+    padding: 30px;
+    width: 85%;
+    height: auto;
+    border-radius: 10px;
+}
+#landing:target{
+    display: block;
 }
 
 #landing h1{
     text-transform: capitalize;
     font-weight: bold;
     font-family: monospace;
+    color: gold;
+    font-size: 70px;
 }
 
-#landing p{
-    margin: 0 auto;
-    text-transform: capitalize;
-    text-wrap: nowrap;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#landing #one,#two,#three{
+    font-size: 40px;
 }
 
-#landing button{
-    text-transform: capitalize;
-    border: none;
-    background-color: black;
-    box-shadow: 1px 1px 10px white;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    font-family:'Courier New', Courier, monospace;
+#landing #one{
+    color: black;
     font-weight: bold;
 }
 
-#landing button:hover{
-    box-shadow: 2px 2px 10px rgb(15, 228, 15);
-    background-color: yellow;
+#landing #two{
+    color: rgb(63, 130, 255);
+}
+
+#landing #three{
     color: black;
+    font-weight: bold;
+}
+
+#landing #four  div{
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: turquoise;
+}
+
+#landing div ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+#landing div ul li{
+    padding-right: 5px;
+}
+
+#landing div ul li img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+#landing div ul #five img{
+    width: 300px;
+    height: 100px;
+}
+
+#one,#two,#three,#four,#five,#six,#seven{
+    visibility: hidden;
 }
 
 /*ABOUT*/
 #about{
     margin: 10px auto;
     padding: 20px;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
-    border-radius: 20px;
-    height: 100%;
+    width: 85%;
+    height: auto;
+    display: none;
+    background: rgb(147, 196, 147);
+    border-radius: 10px;
 }
+
+#about:target{
+    display: block;
+}
+
 #about h1{
     text-align: center;
     text-transform: capitalize;
@@ -140,11 +190,13 @@ main{
     height: 400px;
     border-radius: 10px;  
 }
+
 #about-content img:hover{
     outline-style: solid;
     outline-color: orange;
     outline-width: 3px;    
 }
+
 #a2{
     margin: 0 auto;
     width: 55%;
@@ -154,6 +206,7 @@ main{
     font-size: 30px;
     word-spacing: 3px;
 }
+
 #a2:hover{
     outline-style: solid;
     outline-color: orange;
@@ -161,6 +214,7 @@ main{
     background-color: teal;
     color: white;
 }
+
 i{
     font-weight: bold;
     font-style: normal;
@@ -170,14 +224,18 @@ i{
 /*EXPERIENCE*/
 #experience{
     margin: 10px auto;
-    padding: 20px;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
-    border-radius: 20px;
-    height: 100%;
+    padding: 0;
+    width: 85%;
+    height: auto;
+    display: none;
+    background-color: rgb(172, 185, 172);
+    border-radius: 10px;
 }
+
+#experience:target{
+    display: block;
+}
+
 #experience h1{
     text-align: center;
     text-transform: capitalize;
@@ -200,9 +258,7 @@ i{
     text-transform: capitalize;
     font-weight: bold;
 }
-#type{
-    display: none;
-}
+
 #experience1 img{
     width: 100%;
     height: 200px;
@@ -212,21 +268,29 @@ i{
 #education{
     margin: 10px auto;
     padding: 20px;
-    width: 80%;
-    border: none;
-    border-radius: 20px; 
-    height: 100%;  
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgb(147, 168, 147);
+    display: none;
 }
+
+#education:target{
+    display: block;
+}
+
 #education h1{
     text-align: center;
     text-transform: capitalize;
     font-size: 60px;
 }
+
 #education-content{
     display: flex;
     justify-content: center;
 
 }
+
 #education-content #education1{
     width: 20%;
     margin: 10px;
@@ -235,6 +299,7 @@ i{
     color: aliceblue;
     text-transform: capitalize;
 }
+
 #education1 img{
     width: 100%;
     height: 200px;
@@ -244,18 +309,24 @@ i{
 #skills{
     margin: 10px auto;
     padding: 20px;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
+    width: 85%;
+    height: auto
+    ;
     border-radius: 20px;
-    height: 100%;
+    display: none;
+    background-color: rgb(163, 189, 163);
 }
+
+#skills:target{
+    display: block;
+}
+
 #skills h1{
     text-align: center;
     text-transform: capitalize;
     font-size: 60px;
 }
+
 #skills-content{
     margin: 0 auto;
     width: 100%;
@@ -263,6 +334,7 @@ i{
     flex-wrap: nowrap;
     justify-content: right;
 }
+
 #skills1{
     width: 30%;
     background-color: teal;
@@ -273,15 +345,18 @@ i{
     border: none;
     border-radius: 10px/60%;
 }
+
 #skills1 ul{
     list-style-type: disc;
     display: block;
 }
+
 h4{
     text-align: center;
     color: white;
     font-size: 20px;
 }
+
 #skills1:hover{
     background-color: aliceblue;
     color: black;
@@ -291,130 +366,10 @@ h4{
     outline-width: 2px;
 
 }
+
 #skills1:hover h4{
     color: red;
 }
-
-/*PROJECTS*/
-#project{
-    margin: 10px auto;
-    padding: 20px;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
-    border-radius: 20px;
-    height: 100%;
-}
-#project h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 60px;
-}
-#project-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
- 
-}
-#project1{
-    width: 500px;
-    background-color: teal;
-    margin: 20px;color: white;
-    font-weight: bold;
-    text-transform: capitalize;
-}
-#project1 p{
-    padding: 10px;
-}
-iframe{
-    width: 100%;
-    height: 280px;
-    outline: none;
-    border: none;
-}
-
-/*CONTACT*/
-#contact{
-    margin: 0 auto;
-    padding: 20px;
-    width: 80%;
-    background-image: inherit;
-    background-size: 100% 100%;
-    border: none;
-    border-radius: 20px;
-    height: 100%;
-}
-#contact h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 60px;
-}
-#contact-content{
-    display: flex;
-    justify-content: center;   
-}
-
-#contact h3{
-    padding-top: 140px;
-}
-
-/*FLOATING HIRE*/
-#floating-anime{
-    margin: 0 auto;
-    background-size: 98% 98%;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: aliceblue;
-    display: flex;
-}
-
-#floating-anime div{
-    padding: 10px;
-    margin: 5px 10px;
-    background-color: red;
-    border-radius: 5px;
-    font-weight: bold;
-}
-#floating-anime1{
-    animation-name: myanime1;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-}
-#floating-anime2{
-    animation-name: myanime2;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-}
-#floating-anime div a{
-    color: white;
-    background-color: green;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 1px;
-    padding: 2px;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-#floating-anime div a:hover{
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 10px;
-}
-#floating-anime div:hover{
-    border: none;
-    outline-style: solid;
-    outline-color: orange;
-    outline-width: 2px;
-    border-radius: 5px;
-    background-color: greenyellow;
-    color: black;
-}
-#floating-anime1:hover,#floating-anime2:hover{
-    animation: none;
-}
-
 
 /*FOOTER*/
 footer{
@@ -427,7 +382,8 @@ footer{
     width: 100%;
     display: flex;
     margin: 0 auto;
-
+    position: fixed;
+    bottom: 0;
 }
 
 footer ul{
@@ -451,105 +407,4 @@ footer ul li a i{
     color: white;
     padding: 5px;
     text-align: right;
-}
-/*ANIMATION*/
-@keyframes myanime1{
-    0%{
-        bottom: 40px;
-        right: 0;
-        opacity: 0;
-        background-color: black;
-    }
-    20%{
-        bottom: 40px;
-        right: 0;
-    }
-    20%{
-        bottom: 40px;
-        right: 0;    
-    } 
-    30%{
-        bottom: 40px;
-        right: 0;
-    }
-    40%{
-        bottom: 40px;
-        right: 0;
-    }
-    50%{
-        bottom: 40px;
-        right: 0;
-
-    }
-    60%{
-        bottom: 40px;
-        right: 0;
-    }
-    70%{
-        bottom: 40px;
-        right: 0;
-    }
-    80%{
-        bottom: 40px;
-        right: 0;
-    }
-    90%{
-        bottom: 40px;
-        right: 0;
-    }
-    100%{
-        bottom: 40px;
-        right: 0;
-    }
-    
-}
-
-@keyframes myanime2{
-    0%{
-        bottom: 40px;
-        right: 0;
-    }
-    20%{
-        bottom: 40px;
-        right: 0;
-    }
-    20%{
-        bottom: 40px;
-        right: 0;    
-    } 
-    30%{
-        bottom: 40px;
-        right: 0;
-    }
-    40%{
-        bottom: 40px;
-        right: 0;
-    }
-    50%{
-        bottom: 40px;
-        right: 0;
-    }
-    60%{
-        bottom: 40px;
-        right: 0;
-    }
-    70%{
-        bottom: 40px;
-        right: 0;
-    }
-    80%{
-        bottom: 40px;
-        right: 0;
-    }
-    90%{
-        bottom: 40px;
-        right: 0;
-        opacity: 0;
-        background-color: black;
-    }
-    100%{
-        bottom: 40px;
-        right: 0;
-    }
-    
 }
