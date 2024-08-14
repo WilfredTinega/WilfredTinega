@@ -4,17 +4,10 @@
 
     }
     
-    html{
+    html,body{
         margin: 0;
         padding: 0;
-        border: 4px solid red;
-        overflow-y: hidden;
-        height: 100%;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        height: 100%;
+        height: 100vh;
     }
 
     /*HEADER*/
@@ -34,6 +27,11 @@
         display: block;
     }
 
+    #title1 .bi-list{
+        display: block;
+
+    }
+
     #title1 a{
         margin-left: 15%;
         padding: 2px;
@@ -46,15 +44,16 @@
 
     #lists{
         margin: 0 auto;
+        background-image: url("https://tinyurl.com/56k4mxjm");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
         padding: 0;
-        background-image: inherit;
         width: 50%;
         position: fixed;
         height: 100%;
         left: -50%;
         transition-duration: 1s;
         top: 8vh;
-        background-color: red;
     }
 
     #lists ul{
@@ -81,34 +80,66 @@
 
     /*MAIN*/
     main{
-        margin: 10vh 0 0 0;
-        background-size: 100% 100%;
+        margin: 8vh auto;
         padding: 0 0 0.8vh 0;
         width: 100%;
         height: 100%;
-        overflow-y: hidden;
-        border: 2px solid green;
+        position: fixed;
+        z-index: -1;
     }
 
+    /*LANDING PAGE*/
     #landing{
         margin: 0.5vh auto;
         padding: 0.25vh;
         display: block;
         width: 90%;
-        height: auto;
     }
+    #landing #one,#two,#three{
+        font-size: 30px;
+    }
+    
+    #landing #four  div{
+        font-size: 40px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    #landing div ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    
+    #landing div ul li{
+        padding-right: 5px;
+    }
+    
+    #landing div ul li img{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+    }
+    #landing div ul #five img{
+        width: 150px;
+        height: 50px;
+    }
+    
 
+    /*ABOUT*/
     #about{
         margin: 0.5vh auto;
         padding: 0.25vh;
-        display: block;
         width: 90%;
         height: auto;
+        border-radius: 10px;
+        display: none;
     }
 
     #about h1{
         margin: 0px;
-        padding: 10px;
+        padding: 5px;
         font-size: 30px;
     }
     #about-content{
@@ -121,7 +152,7 @@
     #about-content #a1{
         margin: 0 auto;
         width: 100%;
-        height: 300px;
+        height: 250px;
         display: block;
         border: none;
         border-radius: 0;
@@ -142,15 +173,21 @@
     }
 
     #experience{
-        background-image: inherit;
         width: 90%;
         height: auto;
-        margin: 5vh auto;
-        padding: 5vh 0 5vh 0;
+        margin: 0.5vh auto;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #type{
+        display: none;
     }
 
     #experience h1{
+        padding: 5px;
         font-size: 30px;
+        margin: 0;
     }
 
     #experience #experience-content{
@@ -179,7 +216,7 @@
     }
     
     #education{
-        margin: 8.5vh auto;
+        margin: 0.5vh auto;
         height: auto;
     }
 
@@ -212,8 +249,9 @@
     #skills{
         width: 95%;
         padding: 1vh;
-        margin: 3.5vh auto;
+        margin: 0.5vh auto;
         height: auto;
+        border-radius: 10px;
     }
     #skills h1{
         font-size: 30px;
@@ -229,73 +267,22 @@
         width: 95%;
         margin: 5px auto;
         padding: 0 0 1px 0;
+        border-radius: 0;
     }
     #skills-content #skills1 h4{
         font-size: 15px;
-    }
-
-    #project{
-        margin: 0vh 0 1vh 0;
-        padding: 0;
-        width: 100%;
-        border-radius: 0;
-        height: auto;
-    }
-
-    #project h1{
-        font-size: 30px;
-    }
-
-    #project-content{
-        display: block;
-        width: 100%;
-    }
-
-    #project1{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #project1 p{
-        font-size: 12px;
-    }
-
-    iframe{
-        width: 100%;
-        height: 200px;
-    }
-    
-    #contact{
-        display: block;
-        margin: 19vh auto;
-        padding: 0;
-        width: 95%;
-        height: auto;
-    }
-    #contact h1{
-        font-size: 6vh;
-    }
-    #contact-content{
-        display: block;
-        padding: 2vh;
-    }
-    #floating-anime{
-        display: block;
-        width: 100%;
-        font-size: 4vh;
     }
 
     #experience,#education,#skills,#project,#contact{
         position: static;
         display: block;
     }
-
+*/
     /*FOOTER*/
     footer{
-        font-size: 15px;
+        margin: 0 auto;
         width: 100%;
         display: block;
-        height: 12%;
     }
 
     footer p{
@@ -303,6 +290,7 @@
         text-align: left;
         margin: 0;
         padding: 0;
+        font-size: 12px;
     }
 
     footer ul{
@@ -311,5 +299,6 @@
         width: 100%;
         flex-wrap: wrap;
         font-size: larger;
+        font-size: 15px;
 }
 }
