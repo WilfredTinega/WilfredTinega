@@ -186,8 +186,8 @@ main{
 }
 #about-content img{
     margin: 0 auto;
-    width: 40%;
-    height: 400px;
+    width: 35%;
+    height: 300px;
     border-radius: 10px;  
 }
 
@@ -199,7 +199,7 @@ main{
 
 #a2{
     margin: 0 auto;
-    width: 55%;
+    width: 60%;
     background-color: aliceblue;
     border-radius: 10px; 
     padding: 50px 20px;
@@ -310,8 +310,7 @@ i{
     margin: 10px auto;
     padding: 20px;
     width: 85%;
-    height: auto
-    ;
+    height: auto;
     border-radius: 20px;
     display: none;
     background-color: rgb(163, 189, 163);
@@ -338,10 +337,10 @@ i{
 #skills1{
     width: 30%;
     background-color: teal;
-    margin: 20px;
+    margin: 20px auto;
     color: whitesmoke;
     text-transform: capitalize;
-    padding: 30px;
+    padding: 20px;
     border: none;
     border-radius: 10px/60%;
 }
