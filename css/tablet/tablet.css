@@ -1,304 +1,353 @@
-@media screen and (max-width:425px) {
-    *{
-        box-sizing: border-box;
-
-    }
-    
-    html,body{
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-    }
-
-    /*HEADER*/
+@media screen and (max-width:768px) {  
+    /* HEADER*/
     header{
         margin: 0 auto;
         padding: 0;
-        width: 100%;
-        display: block;
-        height: 8vh;
-    }
-
-    #title1{
-        margin: 0 auto;
-        text-align: left;
-        padding: 0;
-        width: 100%; 
-        display: block;
-    }
-
-    #title1 .bi-list{
-        display: block;
-
-    }
-
-    #title1 a{
-        margin-left: 15%;
-        padding: 2px;
-        color: red;
-        display: inline-block;
-        font-size: 25px;
-        width: auto;
-        height: inherit;
-    }
-
-    #lists{
-        margin: 0 auto;
-        background-image: url("https://tinyurl.com/56k4mxjm");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        padding: 0;
-        width: 50%;
-        position: fixed;
-        height: 100%;
-        left: -50%;
-        transition-duration: 1s;
-        top: 8vh;
-    }
-
-    #lists ul{
-        display: block;
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    
-    #lists ul li a{
-        margin: 0 auto;
-        display: block;
-        text-transform: capitalize;
-        text-decoration: none;
-        padding: 5px;
-        color: white;
-        font-weight: bold;
-        width: 100%; 
-    }
-
-    #lists ul li a:hover{
-        background-color: black;
-    }
-
-    /*MAIN*/
-    main{
-        margin: 8vh auto;
-        padding: 0 0 0.8vh 0;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: -1;
-    }
-
-    /*LANDING PAGE*/
-    #landing{
-        margin: 0.5vh auto;
-        padding: 0.25vh;
-        display: block;
-        width: 90%;
-    }
-    #landing #one,#two,#three{
-        font-size: 30px;
-    }
-    
-    #landing #four  div{
-        font-size: 40px;
-        text-decoration: underline;
-        font-weight: bold;
-    }
-    
-    #landing div ul{
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
+        background-color: aliceblue;
         display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
-    
-    #landing div ul li{
-        padding-right: 5px;
-    }
-    
-    #landing div ul li img{
-        width: 50px;
-        height: 50px;
-        background-color: white;
-    }
-    #landing div ul #five img{
-        width: 150px;
-        height: 50px;
-    }
-    
 
-    /*ABOUT*/
-    #about{
-        margin: 0.5vh auto;
-        padding: 0.25vh;
-        width: 90%;
-        height: auto;
-        border-radius: 10px;
+    .title{
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        justify-content: left;
+    }
+
+    .nav{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;    
+        width: 60%;
+        right: 0;
+    }
+
+    .list .bi-list,
+    .bi-x {
+        margin: 0 auto;
+        padding: 0;
+        font-size: 32px;
         display: none;
     }
 
-    #about h1{
-        margin: 0px;
-        padding: 5px;
-        font-size: 30px;
-    }
-    #about-content{
-        display: block;
-        width: 100%;
+    .title-name{
         margin: 0 auto;
-        padding: 2vh 0 0 0;
+        padding: 0 0 0 10px;
+        width: 100%;
+        font-size: 20px;
+        position: relative;
     }
 
-    #about-content #a1{
-        margin: 0 auto;
-        width: 100%;
-        height: 250px;
-        display: block;
-        border: none;
-        border-radius: 0;
+    .name{
+        background-image: linear-gradient(90deg,red, lime);
+        background-clip: text;
+        color: transparent;
+        cursor: context-menu;
     }
 
-    #about-content #a2{
-        width: 100%;
-        padding: 20px 10px 10px 20px;
-        margin: 0 auto;
-        height: auto;
-        border-radius: 0 0 10px 10px;
+    .bi-circle-half{
+        position: absolute;
+        right: 0;
         font-size: 16px;
-        text-wrap: wrap;
-    }
-
-    #about-content #a1:hover,#about-content #a2:hover{
-        outline: none;
-    }
-
-    #experience{
-        width: 90%;
-        height: auto;
-        margin: 0.5vh auto;
-        padding: 10px;
-        border-radius: 10px;
-    }
-
-    #type{
-        display: none;
-    }
-
-    #experience h1{
-        padding: 5px;
-        font-size: 30px;
-        margin: 0;
-    }
-
-    #experience #experience-content{
-        display: block;
-        margin: 5px auto;
-        width: 100%;
-    }
-
-    #experience1{
-        display: flex;
-        width: 90%;
-        margin: 10px auto;
-        padding: 0;
-        border-radius: 10px;
-    }
-
-    #experience #experience-content #experience1 img{
-        height: inherit;
-        width: 60px;
-        border-radius: 10px 0 0 10px;
-    }
-
-    #experience #experience-content #experience1 div{
-        font-size: 12px;
         padding: 5px;
     }
-    
-    #education{
-        margin: 0.5vh auto;
-        height: auto;
-    }
 
-    #education h1{
-        font-size: 30px;
-    }
-
-    #education-content{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        
-    }
-    #education-content #education1{
-        display: flex;
-        margin: 2.5vh auto;
-        width: 90%;
-        border-radius: 10px;
-    }
-    #education-content #education1 img{
-        height: inherit;
-        width: 60px;
-        border-radius: 10px 0 0 10px;
-    }
-    #education-content #education1 div{
-        padding: 5px;
-        font-size: 12px;
-    }
-
-    #skills{
-        width: 95%;
-        padding: 1vh;
-        margin: 0.5vh auto;
-        height: auto;
-        border-radius: 10px;
-    }
-    #skills h1{
-        font-size: 30px;
-    }
-    #skills-content{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        font-size: 12px;
-    }
-    #skills-content #skills1{
-        width: 95%;
-        margin: 5px auto;
-        padding: 0 0 1px 0;
-        border-radius: 0;
-    }
-    #skills-content #skills1 h4{
+    .btn{    
+        background-image: linear-gradient(90deg,red, lime);
+        background-clip: text;
+        color: transparent;
+        border: none;
+        text-transform: capitalize;
         font-size: 15px;
+        padding: 5px;
     }
 
-    #experience,#education,#skills,#project,#contact{
-        position: static;
-        display: block;
+    .btn:hover{
+        background-image: linear-gradient(90deg,lime, red);
+        background-clip: text;
+        color: transparent;
     }
 
-    /*FOOTER*/
-    footer{
-        margin: 0 auto;
-        width: 100%;
-        display: block;
-    }
-
-    footer p{
-        width: 100%;
+    .nav li{
+        width: 25%;
         text-align: left;
-        margin: 0;
-        padding: 0;
-        font-size: 12px;
     }
 
-    footer ul{
-        display: flex;
-        justify-content: right;
-        width: 100%;
-        flex-wrap: wrap;
-        font-size: larger;
-        font-size: 15px;
+    
+
+/* MAIN */
+main{
+    margin: 35px auto;
+    padding: 0;
+    background-color: white;
 }
+
+.box{
+    margin: 0 auto;
+    padding: 5px;
+    width: 90%;
+}
+
+.box h1{
+    text-transform: capitalize;
+}
+
+.box ul{
+    margin: 0;
+    padding: 0;
+}
+
+.box h1 span {
+    margin: 0 auto;
+    padding: 0;
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Landing Page */
+.land1{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.lands{
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.lands h1{
+    text-transform: capitalize;
+}
+
+
+.lands p{
+    font-size: 25px;
+}
+
+.land2{
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.land2 img{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    height: 25vh;
+}
+
+.stacks{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.stacks svg{
+    margin: 0 auto;
+    width: 60px;
+}
+
+/* About Element */
+.about-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about1{
+    margin: 0 auto;
+    padding: 0;
+    width: 40%;
+}
+
+.about1 img{
+    width: 100%;
+    height: 25vh;
+}
+
+.about2{
+    margin: 0 auto;
+    padding: 0 0 0 10px;
+    width: 60%;
+    list-style-type: none;
+}
+
+.about2 li{
+    line-height: 40px;
+    padding: 0;
+    font-size: 25px;
+}
+
+.about2 li i{
+    padding: 0 0 0 10px;
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+
+}
+
+/* Experience Element */ 
+.experience-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:normal;
+    flex-wrap: wrap;
+}
+
+.experience1{
+    margin: 0 auto;
+    padding: 0;
+    width: 33%;
+    background-color: aliceblue;
+}
+
+.experience1 img{
+    width: 100%;
+    height: 20vh;
+}
+
+.experience1 div{
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Education */
+.education-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education1{
+    margin: 0 auto;
+    padding: 0;
+    width: 30%;
+    background-color: aliceblue;
+}
+
+.education1 img{
+    width: 100%;
+    height: 18vh;
+    background-color: white;
+}
+
+.education1 div{
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.education1 a{
+    cursor: alias;
+
+}
+
+/* Skills */
+.skills-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.skills1{
+    margin: 0 auto;
+    padding: 0;
+    width: 30%;
+    background-color: aliceblue;
+}
+
+.skills1 h4{
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.skills1 h4 span{
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
+
+.skills1 ul{
+    margin: 0 20px;
+    padding: 5px;
+}
+
+.skills1 ul li{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+/* Footer */ 
+footer{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0 auto;
+    padding: 5px;
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+footer ul li{
+    padding: 5px;
+}
+
+footer ul li a{
+    font-size: 20px;    
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+footer ul li a svg{
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
+
 }
