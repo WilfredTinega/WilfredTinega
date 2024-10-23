@@ -96,7 +96,7 @@ header{
 
 /* MAIN */
 main{
-    margin: 35px auto;
+    margin: 35px auto 0 auto;
     padding: 0;
     background-color: white;
 }
