@@ -1,0 +1,365 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* HEADER*/
+header{
+    margin: 0 auto;
+    padding: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.title{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.nav{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;    
+    width: 50%;
+}
+
+.list .bi-list,
+.bi-x {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 32px;
+    display: none;
+}
+
+.title-name{
+    margin: 0 auto;
+    padding: 0 0 0 50px;
+    width: 100%;
+    font-size: 30px;
+    position: relative;
+}
+
+.title-name a{
+    text-decoration: none;
+}
+
+.name{
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
+
+.bi-circle-half{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.btn{    
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+    border: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.btn:hover{
+    background-image: linear-gradient(90deg,lime, red);
+    background-clip: text;
+    color: transparent;
+}
+
+.nav li{
+    width: 25%;
+    text-align: center;
+    cursor: context-menu;
+    font-size: 20px;
+}
+
+/* MAIN */
+main{
+    margin: 35px auto 0 auto;
+    padding: 0;
+    background-color: white;
+}
+
+.box{
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.box h1{
+    text-transform: capitalize;
+}
+
+.box ul{
+    margin: 0;
+    padding: 0;
+}
+
+.box h1 span {
+    margin: 0 auto;
+    padding: 0;
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
+
+/* Landing Page */
+.land1{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.lands{
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.lands h1{
+    text-transform: capitalize;
+}
+
+
+.lands p{
+    font-size: 25px;
+}
+
+.land2{
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+}
+
+.land2 img{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    height: 50vh;
+}
+
+.stacks{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.stacks svg{
+    margin: 0 auto;
+    width: 80px;
+}
+
+/* About Element */
+.about-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about1{
+    margin: 0 auto;
+    padding: 0;
+    width: 40%;
+}
+
+.about1 img{
+    width: 100%;
+    height: 50vh;
+}
+
+.about2{
+    margin: 0 auto;
+    padding: 0 0 0 20px;
+    width: 60%;
+    list-style-type: none;
+}
+
+.about2 li{
+    line-height: 90px;
+    padding: 0;
+    font-size: 30px;
+}
+
+.about2 li i{
+    padding: 0 0 0 10px;
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+
+}
+
+/* Experience Element */ 
+.experience-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.experience1{
+    margin: 0 auto;
+    padding: 0;
+    width: 33%;
+    background-color: aliceblue;
+}
+
+.experience1 img{
+    width: 100%;
+    height: 50vh;
+}
+
+.experience1 div{
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.education-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education1{
+    margin: 0 auto;
+    padding: 0;
+    width: 30%;
+    background-color: aliceblue;
+}
+
+.education1 img{
+    width: 100%;
+    height: 30vh;
+    background-color: white;
+}
+
+.education1 div{
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.education1 a{
+    cursor: alias;
+
+}
+
+/* Skills */
+.skills-content{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.skills1{
+    margin: 0 auto;
+    padding: 0;
+    width: 30%;
+    background-color: aliceblue;
+}
+
+.skills1 h4{
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.skills1 h4 span{
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
+
+.skills1 ul{
+    margin: 0 20px;
+    padding: 5px;
+}
+
+.skills1 ul li{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+/* Footer */ 
+footer{
+    margin: 0 auto;
+    padding: 5px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0 auto;
+    padding: 5px;
+    width: 50%;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
+
+footer ul li{
+    padding: 5px;
+}
+
+footer ul li a{
+    font-size: 20px;    
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+    
+}
+
+footer ul li a svg{
+    width: 20px;
+    height: 20px;
+    background-image: linear-gradient(90deg,red, lime);
+    background-clip: text;
+    color: transparent;
+}
