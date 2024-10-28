@@ -25,10 +25,10 @@
         padding: 0;
         list-style-type: none;
         display: block;    
-        width: 30%;
+        width: 100%;
         position: absolute;
         height: 100vh;
-        left: -30%;
+        left: -100%;
         background-color: aliceblue;
         transition-duration: 1s;
     }
@@ -96,7 +96,7 @@
     
     /* MAIN */
     main{
-        margin: 35px auto;
+        margin: 0 auto;
         padding: 0;
         background-color: white;
     }
