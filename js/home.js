@@ -18,11 +18,17 @@ $(document).ready(function(){
         });
     });
 
-    $(".about,.experience,.education, .skills").click(function(){
-        $(".nav").css({
-            "left" : "-100%"
-        });        
-        $(".bi-list").show();
-        $(".bi-x").hide();
-    })
+    const getLength = window.innerWidth;
+    console.log(getLength)
+
+    if (getLength <= 425){
+        $(".about,.experience,.education, .skills").click(function(){
+            $(".nav").css({
+                "left" : "-100%"
+            });        
+            $(".bi-list").show();
+            $(".bi-x").hide();
+        })
+
+    }   
 })

@@ -4,11 +4,15 @@
 }
 
 .main{
-    background-color: darkblue;
+    background-color: #044F3D;
     color: black;
 }
 
 .footer{
-    background-color: darkblue;
+    background-color: #08775D;
+    color: white;
+}
+
+.misc{
     color: white;
 }
