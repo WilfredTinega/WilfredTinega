@@ -1,24 +1,24 @@
-* { 
+* {
   box-sizing: border-box;
-  font-family: "Outfit";
 }
 
 html,
-body{
+body {
   margin: 0;
   padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* HEADER*/
 header {
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
   background-color: aliceblue;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
-  align-items: center;
 }
 
 .title {
@@ -35,7 +35,6 @@ header {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 50%;
 }
 
@@ -86,7 +85,6 @@ header {
   background-image: linear-gradient(90deg, lime, red);
   background-clip: text;
   color: transparent;
-  cursor: pointer;
 }
 
 .nav li {
@@ -118,7 +116,7 @@ main {
   padding: 0;
 }
 
-.box h1 span {
+.box h1 span, .box h1 .contact .contact-left .submit input, .contact .contact-left .submit .box h1 input, .box h1 .contact .contact-left .inputs-field input::placeholder, .contact .contact-left .inputs-field .box h1 input::placeholder {
   margin: 0 auto;
   padding: 0;
   background-image: linear-gradient(90deg, red, lime);
@@ -132,7 +130,6 @@ main {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .lands {
@@ -235,7 +232,7 @@ main {
 
 .experience1 img {
   width: 100%;
-  height: 30vh;
+  height: 50vh;
 }
 
 .experience1 div {
@@ -296,7 +293,7 @@ main {
   text-transform: capitalize;
 }
 
-.skills1 h4 span {
+.skills1 h4 span, .skills1 h4 .contact .contact-left .submit input, .contact .contact-left .submit .skills1 h4 input, .skills1 h4 .contact .contact-left .inputs-field input::placeholder, .contact .contact-left .inputs-field .skills1 h4 input::placeholder {
   background-image: linear-gradient(90deg, red, lime);
   background-clip: text;
   color: transparent;
@@ -310,6 +307,88 @@ main {
 .skills1 ul li {
   text-transform: capitalize;
   font-size: 15px;
+}
+
+/*contact form */
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact span, .contact .contact-left .submit input, .contact .contact-left .inputs-field input::placeholder {
+  background-image: linear-gradient(90deg, red, lime);
+}
+.contact .contact-left {
+  margin: 20px auto;
+}
+.contact .contact-left .contact-title h1 {
+  margin: 0;
+  padding: 0;
+}
+.contact .contact-left .contact-title hr {
+  max-width: 100px;
+  margin: 0;
+  min-height: 5px;
+  background-image: linear-gradient(90deg, red, lime);
+}
+.contact .contact-left .inputs-field,
+.contact .contact-left .message-box {
+  margin-top: 10px;
+}
+.contact .contact-left .inputs-field {
+  border-radius: 50px;
+}
+.contact .contact-left .inputs-field input {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(170, 97, 97, 0.363);
+}
+.contact .contact-left .inputs-field input:hover {
+  background-color: aliceblue;
+}
+.contact .contact-left .inputs-field input:focus {
+  background-color: aliceblue;
+}
+.contact .contact-left .inputs-field input::placeholder {
+  color: white;
+  background-clip: text;
+  color: transparent;
+}
+.contact .contact-left .message-box {
+  max-width: 100%;
+}
+.contact .contact-left .message-box textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  min-height: 10vh;
+  outline: none;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+.contact .contact-left .submit input {
+  margin: 10px auto;
+  display: block;
+  width: 80%;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 70px;
+  color: aliceblue;
+}
+.contact .contact-left .submit input:hover {
+  background-image: linear-gradient(90deg, lime, red);
+  color: white;
 }
 
 /* Footer */
@@ -350,12 +429,8 @@ footer ul li a {
   color: transparent;
 }
 
-footer ul li a svg {
-  width: 20px;
-  height: 20px;
-  background-image: linear-gradient(90deg, red, lime);
-  background-clip: text;
-  color: transparent;
+footer ul li a i {
+  display: none;
 }
 
 /*# sourceMappingURL=desktop.css.map */

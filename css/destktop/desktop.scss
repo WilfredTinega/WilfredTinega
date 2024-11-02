@@ -317,6 +317,106 @@ main{
     font-size: 15px;
 }
 
+/*contact form */
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    span{
+        background-image: linear-gradient(90deg,red, lime);
+    }
+
+    .contact-left{
+        margin: 20px auto;
+
+        .contact-title{
+            h1{
+                margin: 0;
+                padding: 0;
+            }
+            hr{
+                max-width: 100px;
+                margin: 0;
+                min-height: 5px;
+                background-image: linear-gradient(90deg,red, lime);
+            }
+        }
+        .inputs-field,
+        .message-box{
+            margin-top: 10px;
+        }
+
+        .inputs-field{
+            border-radius: 50px;
+            input{
+                display: block;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: inherit;
+                font-size: 20px;
+                padding: 10px;
+                background-color: rgba(170, 97, 97, 0.363);
+            }
+
+            input:hover{
+                background-color: aliceblue;
+            }
+
+            input:focus{
+                background-color: aliceblue;
+            }
+
+            input::placeholder{
+                color: white;
+                @extend span;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+        .message-box{
+            max-width: 100%;
+
+            textarea{
+                display: block;
+                width: 100%;
+                resize: none;
+                min-height: 10vh;
+                outline: none;
+                overflow: scroll;
+                -ms-overflow-style: none; 
+                scrollbar-width: none;
+                border-radius: 20px;
+                padding: 10px;
+            }
+        }
+
+        .submit{
+
+            input{
+                margin: 10px auto;
+                display: block;
+                width: 80%;
+                border: none;
+                outline: none;
+                border-radius: inherit;
+                font-size: 20px;
+                padding: 5px;
+                @extend span;
+                border-radius: 70px;
+                color: aliceblue;
+            }
+
+            input:hover{
+                background-image: linear-gradient(90deg,lime, red);
+                color: white;
+            }
+        }
+    }
+}
+
 /* Footer */ 
 footer{
     margin: 0 auto;
@@ -356,10 +456,7 @@ footer ul li a{
     
 }
 
-footer ul li a svg{
-    width: 20px;
-    height: 20px;
-    background-image: linear-gradient(90deg,red, lime);
-    background-clip: text;
-    color: transparent;
+footer ul li a i{
+    display: none;
 }
+
