@@ -2,15 +2,27 @@
 
 I am an **`Electrical and Electronics Engineer`**. Specializes in **`Power Systems`**, **`Building Services and Protection design`**, **`Programming`** and **`Web Developer`**
 
-## Project Done
-- Building Magiro Power and making it responsive for mobile devices. Check the Progress [here](https://magiropower.netlify.app)
-- Currently building a replica website for The room Member fellowship by ALX africa. Check the progress [here](https://membertheroom.netlify.app)
-- Murang'a University of Technology student and employee UI/UX. Have a look [here](https://mutportal.netlify.app)
+# Learning ...
 
-## Stacks
-[<img src="https://shorturl.at/3x09e" style="width:120px; height:40px; background-color: white;">]()
-[<img src="https://shorturl.at/XG6Vw" style="width:40px; height:40px; background-color: white;">]()
-[<img src="https://shorturl.at/1cjM3" style="width:40px; height:40px; background-color: white;">]()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Contact Me 
 - For Collaboration reach me through: <br>
