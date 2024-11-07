@@ -15,32 +15,49 @@
     a{
         text-decoration: none;
     }
-}
 
-.wrapper{
-    min-height: 100vh;
 }
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include wrap;
+    background-color: rgba(183, 183, 244, 0.3);
+
+    span{
+        background-image: linear-gradient(16deg, lime,red,blue);
+        background-clip: text;
+        color: transparent;
+    }
+    a{
+        text-decoration: none;
+    }
 
     .navbar-heading{
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-        padding: 10px;
+        padding: 0 10px;
 
-        img,
+        i,
         span{
             cursor: pointer;
         }
+
+        .bi-list{
+            display: inline-block;
+            font-size: 32px;
+            display: none;
+        }
+        .bi-x{
+            display: inline-block;
+            font-size: 32px;
+            display: none; 
+        }
     }
 
-    ul{
+    .navbar-list{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -65,59 +82,139 @@
     }
 }
 
+@media screen and (max-width:425px) {
+    .navbar{
+        display: block;
+        @include wrap;
+    
+        .navbar-heading{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+    
+            i,
+            span{
+                cursor: pointer;
+            }
+    
+            .bi-list{
+                display: inline-block;
+                font-size: 32px;
+                display: none;
+            }
+        }
+    
+        .navbar-list{
+            display: block;
+            background-color: rgba(185, 185, 185, 1);
+            width: 100%;
+            min-height: 50vh;
+            display: none;
+    
+            li{
+                cursor: pointer;
+                padding: 10px;
+            }
+    
+            a{
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 50px;
+            }
+            
+            a:hover{
+                background-color: rgba(116, 116, 246, 0.134);
+    
+            }
+        }
+    } 
+}
+
 .home-page{
     @include wrap;
-    @extend .wrapper;
+    min-height: 100vh;
+    background-color: rgba(143, 121, 143, 0.238);
+    padding: 20px;
+
+    .home-top{
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+        p{
+            font-size: 30px;
+        }
+
+    }
+
+    .home-bottom{
+        margin: 0 auto;
+        max-width: 100%;
+
+        .stacks{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            flex-wrap: wrap;
+            gap: 5px;
+
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
 }
 
 .about-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .blog-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .contact-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .education-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .experience-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .projects-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .skills-page{
     @include wrap;
-    @extend .wrapper;
 }
 
 .footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    
+    background-color: rgba(183, 183, 244, 0.3);
     ul{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
         list-style-type: none;
         
         li{
-            padding: 10px;
+            padding: 5px;
         }
     }
 }
