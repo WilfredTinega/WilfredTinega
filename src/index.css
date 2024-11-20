@@ -5,6 +5,34 @@
   font-family: "Outfit", serif;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes topImage {
+  0% {
+    transform: rotate(0deg);
+    background-image: linear-gradient(16deg, lime, red, blue);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(147, 165, 240, 0.233);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -35,32 +63,27 @@
   font-size: 32px;
   display: none;
 }
-.navbar .navbar-heading .bi-x {
-  display: inline-block;
-  font-size: 32px;
-  display: none;
-}
 .navbar .navbar-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+  justify-content: flex-end;
   list-style-type: none;
+  flex-wrap: wrap;
+  gap: 0;
 }
 .navbar .navbar-list li {
   cursor: pointer;
-  padding: 10px;
+  border-radius: 50px;
+  padding: 5px;
+}
+.navbar .navbar-list li:hover {
+  background-color: rgba(116, 116, 246, 0.134);
 }
 .navbar .navbar-list a {
   text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 50px;
-}
-.navbar .navbar-list a:hover {
-  background-color: rgba(116, 116, 246, 0.134);
+  padding: 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 800px) {
   .navbar {
     display: block;
   }
@@ -79,6 +102,9 @@
     gap: 20px;
     padding: 10px;
   }
+  .navbar .navbar-heading h1 {
+    font-size: 20px;
+  }
   .navbar .navbar-heading i,
   .navbar .navbar-heading span {
     cursor: pointer;
@@ -86,14 +112,13 @@
   .navbar .navbar-heading .bi-list {
     display: inline-block;
     font-size: 32px;
-    display: none;
   }
   .navbar .navbar-list {
-    display: block;
     background-color: rgb(185, 185, 185);
     width: 100%;
-    min-height: 50vh;
     display: none;
+    flex: 1;
+    min-height: 90vh;
   }
   .navbar .navbar-list li {
     cursor: pointer;
@@ -107,11 +132,15 @@
   .navbar .navbar-list a:hover {
     background-color: rgba(116, 116, 246, 0.134);
   }
+  .navbar .navbar-list.active {
+    display: block;
+    position: absolute;
+  }
 }
 .home-page {
-  min-height: 100vh;
-  background-color: rgba(143, 121, 143, 0.238);
   padding: 20px;
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 .home-page span {
   background-image: linear-gradient(16deg, lime, red, blue);
@@ -125,19 +154,31 @@
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
 }
 .home-page .home-top img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  animation-name: topImage;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 .home-page .home-top p {
   font-size: 30px;
 }
 .home-page .home-bottom {
-  margin: 0 auto;
-  max-width: 100%;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+.home-page .home-bottom h1 {
+  text-align: center;
+  font-size: 50px;
+  animation-name: fadeIn;
+  animation-duration: 4s;
 }
 .home-page .home-bottom .stacks {
   display: flex;
@@ -149,9 +190,42 @@
 }
 .home-page .home-bottom .stacks img {
   width: 40px;
-  height: 40px;
 }
 
+@media screen and (max-width: 800px) {
+  .home-top {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+  }
+  .home-top img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    animation-name: topImage;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    display: none;
+  }
+  .home-top p {
+    font-size: 30px;
+  }
+  .stacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .stacks img {
+    border-radius: 20px;
+  }
+}
 .about-page span {
   background-image: linear-gradient(16deg, lime, red, blue);
   background-clip: text;
@@ -216,6 +290,7 @@
 }
 
 .footer {
+  text-align: center;
   background-color: rgba(183, 183, 244, 0.3);
 }
 .footer ul {

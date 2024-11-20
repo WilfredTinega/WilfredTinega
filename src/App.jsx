@@ -14,7 +14,7 @@ import Education from './pages/Education'
 export default function 
 () {
   return (
-    <div>
+    <>
       <Navbar />
       <Routes>
         <Route path='/' element = {<Home />} />
@@ -27,6 +27,6 @@ export default function
         <Route path='/contact-me' element = {<Contacts />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   )
 }

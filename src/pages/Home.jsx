@@ -7,9 +7,27 @@ export default function Home() {
             <div className='home-top'>
                 <div>
                     <h1><span><i class="bi-code-slash"></i>Hello I am...</span></h1>
-                    <p>Electrical and Electronics Engineer</p>
-                    <p>Front End Web Developer</p>
-                    <p>I Build For Web</p>
+                    <p>
+                      <tt>Electrical </tt>
+                      <tt>and </tt>
+                      <tt>Electronics </tt>
+                      <tt>Engineer</tt>
+                      
+                    </p>
+                    <p>
+                      <tt>Front-</tt>
+                      <tt>End </tt>
+                      <tt>Web </tt>
+                      <tt>Developer</tt>
+                    </p>
+                    <p>
+                      <tt>I </tt>
+                      <tt>Build </tt>
+                      <tt>For </tt>
+                      <tt>Web</tt>
+                      <tt></tt>
+                      <tt></tt>
+                      </p>
                 </div>
                 <img src={Assests.lowkieman} alt=""/>
             </div>
