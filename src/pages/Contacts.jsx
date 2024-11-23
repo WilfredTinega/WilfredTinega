@@ -1,4 +1,5 @@
 import React from 'react'
+import { Assests } from '../assets/Assests'
 
 export default function Contacts() {
   return (
@@ -15,11 +16,8 @@ export default function Contacts() {
             <input type="email" name="Email" id="email" placeholder='Your Email' />
           </div>
           <textarea name="Message" id="message" placeholder='Your message here...'></textarea>
-          <input type="submit" />
+          <input type="submit" className='submit' />
         </form>
-      </div>
-      <div className="right">
-        <img src="" alt="" />
       </div>
     </div>
   )
