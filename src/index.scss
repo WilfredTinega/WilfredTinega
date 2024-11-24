@@ -66,10 +66,11 @@ body{
                 }
         }
 
-        .bi-list{
+        .bi-person{
             display: inline-block;
             font-size: 2rem;
             display: none;
+            cursor: pointer;
         }
 
         .dark-mode{
@@ -125,7 +126,7 @@ body{
             }
             
     
-            .bi-list{
+            .bi-person{
                 display: inline-block;
                 font-size: 32px;
             }

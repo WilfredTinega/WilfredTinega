@@ -11,7 +11,8 @@ export const Navbar = () => {
           <div className='dark-mode'>
             <img src={Assests.light_mode} alt=""/>
           </div>
-          <div className='bi-list'></div>
+          <Link to="/about">
+          <div className='bi-person'></div></Link>
         </div>
         <div className='dark-mode1'>
             <img src={Assests.light_mode} alt=""/>
