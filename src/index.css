@@ -336,6 +336,12 @@ body {
   color: lime;
 }
 
+@media (orientation: portrait) {
+  .nyumbani {
+    margin: 1rem auto;
+    max-width: 95%;
+  }
+}
 .nyumbani:hover {
   background-color: rgba(183, 183, 244, 0.5);
 }
