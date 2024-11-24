@@ -382,32 +382,39 @@ body {
   border: none;
   outline: none;
 }
-.contact-page .left form div {
-  padding: 0.5rem;
+.contact-page .left form {
+  box-sizing: border-box;
+  padding: 1rem;
 }
-.contact-page .left form div input {
+.contact-page .left form .name-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-page .left form .name-email input {
+  display: block;
+  margin: 0.2rem auto;
   outline: none;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   border-radius: 0.2rem;
-  padding: 0.3rem;
 }
-.contact-page .left form div input:hover {
+.contact-page .left form .name-email input:hover {
   box-shadow: 0 0 0.8rem white;
 }
-.contact-page .left form div input:focus {
+.contact-page .left form .name-email input:focus {
   background-color: rgba(183, 183, 244, 0.8);
   color: white;
 }
-.contact-page .left form div input::placeholder {
+.contact-page .left form .name-email input::placeholder {
   color: grey;
   font-size: 1.2rem;
 }
-.contact-page .left form div :nth-child(1) {
-  margin-right: 0.5rem;
-}
-.contact-page .left form div :nth-child(2) {
-  margin-left: 0.5rem;
+@media (orientation: portrait) {
+  .contact-page .left form .name-email {
+    display: block;
+  }
 }
 .contact-page .left form textarea {
   margin: 0.2rem auto;
@@ -423,6 +430,9 @@ body {
 }
 .contact-page .left form textarea:focus {
   background-color: rgba(183, 183, 244, 0.8);
+}
+.contact-page .left form .results {
+  text-align: center;
 }
 .contact-page .left form .submit {
   display: block;
@@ -484,30 +494,30 @@ body {
   background-clip: text;
   color: transparent;
 }
-.footer .footer-contacts {
+.footer .footer-nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   align-items: center;
   justify-content: center;
 }
-.footer .footer-contacts li {
+.footer .footer-nav li {
   padding: 5px;
   color: grey;
   text-align: center;
 }
-.footer .footer-contacts li a {
+.footer .footer-nav li a {
   text-decoration: none;
 }
-.footer .footer-contacts li a:hover {
+.footer .footer-nav li a:hover {
   text-decoration: underline;
 }
-.footer .footer-contacts li i,
-.footer .footer-contacts li span {
+.footer .footer-nav li i,
+.footer .footer-nav li span {
   background-image: linear-gradient(15deg, lime, red, blue);
   background-clip: text;
   color: transparent;
 }
-.footer .footer-contacts li i:hover {
+.footer .footer-nav li i:hover {
   background-image: linear-gradient(15deg, blue, red, lime);
   background-clip: text;
   color: transparent;

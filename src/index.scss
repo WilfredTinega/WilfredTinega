@@ -405,14 +405,21 @@ body{
             }
         }
         form{
-            div{
-                padding: 0.5rem;
+            box-sizing: border-box;
+            padding: 1rem;
+            .name-email{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+
                 input{
+                    display: block;
+                    margin: 0.2rem auto;
                     outline: none;
                     border: none;
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     border-radius: 0.2rem;
-                    padding: 0.3rem;
                 }
 
                 input:hover{
@@ -428,15 +435,15 @@ body{
                     color: grey;
                     font-size: 1.2rem;
                 }
-
-                :nth-child(1){
-                    margin-right: 0.5rem;
-                }
-
-                :nth-child(2){
-                    margin-left: 0.5rem;
-                }
             }
+
+            @media (orientation: portrait) {
+                .name-email{
+                    display: block;
+                }
+                
+            }
+
 
             textarea{
                 margin: 0.2rem auto;
@@ -453,6 +460,10 @@ body{
 
             textarea:focus{
                 background-color: rgba(183, 183, 244, 0.8);
+            }
+
+            .results{
+                text-align: center;
             }
 
             .submit{
@@ -517,7 +528,7 @@ body{
         }
     }
 
-    .footer-contacts{
+    .footer-nav{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         align-items: center;

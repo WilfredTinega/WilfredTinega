@@ -11,15 +11,20 @@ const Footer = () => {
             <ul>
                 <li><a href="https://www.linkedin.com/in/wilfredtinega" class="bi-linkedin"></a></li>
                 <li><a href="https://github.com/lowkieman" class="bi-github"></a></li>
-                <li><a href="https://x.com/tinegawilfred" class="bi-twitter"></a></li>         
+                <li><a href="https://x.com/tinegawilfred" class="bi-twitter"></a></li> 
+                <li><a href='mailTo:tinegamamboleo@gmail.com' class="bi-envelope"></a> </li>
+                <li><a href="tel:+254740781289" class="bi-telephone"></a></li>       
             </ul>
-        </div>      
-        <ul className='footer-contacts'>
-            <li><Link to= "/contact-me">Get in Touch<i class="bi-box-arrow-up-right"></i></Link></li>
-            <li> <span class="bi-person"></span> Wilfred Tinega </li>
-            <li> <span class="bi-telephone"></span> <>0740781289 </></li>
-            <li> <span class="bi-envelope"></span> <>tinegamamboleo@gmail.com</> </li>
-        </ul>     
+        </div>
+
+        <div className="footer-nav">
+            <ul>
+                <li><Link to="about">About<i class="bi-box-arrow-up-right"></i></Link></li>
+                <li><Link to="projects">Projects<i class="bi-box-arrow-up-right"></i></Link></li>
+                <li><Link to="blog">Blog<i class="bi-box-arrow-up-right"></i></Link></li>
+                <li><Link to="contact-me">Get in Touch<i class="bi-box-arrow-up-right"></i></Link></li>
+            </ul>
+        </div>   
     </div>
   )
 }
