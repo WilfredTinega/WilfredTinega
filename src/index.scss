@@ -252,11 +252,18 @@ body{
 
     .experience-page{
         @include wrap;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        box-sizing: border-box;
-        justify-content: space-between;
-        gap: 0.5rem;
+
+        h1{
+            text-align: right;
+            padding-right: 1rem;
+        }
+        .experience-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            box-sizing: border-box;
+            justify-content: space-between;
+            gap: 0.5rem;
+        }
 
         .wraper{
             background-color: rgba(183, 183, 244, 0.3);
@@ -322,9 +329,17 @@ body{
     
     .education-page{
         @include wrap;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 0.5rem;
+
+        h1{
+            text-align: right;
+            padding-right: 1rem;
+        }
+
+        .education-content{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            gap: 0.5rem;
+        }
 
         .wraper{
             padding-bottom: 2rem;
