@@ -10,6 +10,10 @@ import Contacts from './pages/Contacts'
 import Experience from './pages/Experience'
 import Skills from './pages/Skills'
 import Education from './pages/Education'
+import Frontend from './projects/Frontend'
+import ReactProjects from './projects/ReactProjects'
+import VanillaJS from './projects/VanillaJS'
+import HtmlCss from './projects/HtmlCss'
 
 export default function () {
   return (
@@ -24,7 +28,13 @@ export default function () {
           <Route path='education' element = {<Education/>}/>
         </Route>
 
-        <Route path='/projects' element = {<Projects />} />
+        <Route path='/projects' element = {<Projects />}>
+          <Route path='front-end' element = {<Frontend/>}/>
+          <Route path='react-projects' element = {<ReactProjects/>}/>
+          <Route path='vanillajs' element = {<VanillaJS/>}/>
+          <Route path='htmlcss' element = {<HtmlCss/>}/>
+        </Route>
+        
         <Route path='/blog' element = {<Blogs />} />
         <Route path='/contact-me' element = {<Contacts />} />
       </Routes>

@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "jquery": "^3.7.1",
+    "material-icons": "^1.13.12",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0"

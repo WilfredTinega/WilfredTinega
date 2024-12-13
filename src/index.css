@@ -26,6 +26,15 @@ body {
   animation: fadeIn 1s;
 }
 
+h1 span span {
+  background-image: linear-gradient(90deg, lime, red, blue);
+  background-clip: text;
+  color: transparent;
+}
+h1 span a {
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -465,16 +474,58 @@ body {
   box-shadow: 0 0 1rem white;
 }
 
-.projects-page {
-  margin: auto;
+.projects-page .navbar-project h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
-.projects-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
+.projects-page .navbar-project ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
-.projects-page a {
+.projects-page .navbar-project ul li {
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4rem;
+  background: rgba(255, 0, 0, 0.11);
+}
+.projects-page .navbar-project ul li a {
   text-decoration: none;
+}
+.projects-page .navbar-project ul li:hover {
+  box-shadow: 0 0 1rem white;
+}
+@media (max-width: 40rem) {
+  .projects-page .navbar-project h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  .projects-page .navbar-project ul {
+    font-size: 0.8rem;
+    gap: 0.1rem;
+  }
+  .projects-page .navbar-project ul li {
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4rem;
+    background: rgba(255, 0, 0, 0.11);
+  }
+  .projects-page .navbar-project ul li a {
+    text-decoration: none;
+  }
+  .projects-page .navbar-project ul li:hover {
+    box-shadow: 0 0 1rem white;
+  }
+}
+.projects-page .projects-container {
+  padding: 1rem;
 }
 
 .footer {

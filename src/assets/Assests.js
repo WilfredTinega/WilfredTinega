@@ -12,7 +12,6 @@ import sass from "./sass.svg";
 import react from "./react.svg"
 import jquery from "./jquery.svg"
 import npm from "./npm.svg"
-import lowkieman from "./lowkieman.png"
 
 export const Assests = {
     close,
@@ -28,6 +27,5 @@ export const Assests = {
     sass,
     react,
     jquery,
-    npm,
-    lowkieman
+    npm
 }

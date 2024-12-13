@@ -1,18 +1,28 @@
-import React from 'react'
-import { Link, Outlet } from 'react-router-dom'
-import Nyumbani from './Nyumbani'
+import React from 'react';
+import { Link, Outlet, useLocation } from 'react-router-dom';
+import Nyumbani from './Nyumbani';
 
 export default function About() {
+  const location = useLocation();
+  const isAboutRoot = location.pathname === '/about';
+
   return (
     <div className='about-page'>
-      <h1><span class="bi-code-slash">About</span></h1>
-      <Nyumbani />
       <ul className="about-nav">
-        <li> <Link to="experience">Experience</Link> </li>
-        <li> <Link to="skills">Skills</Link> </li>
-        <li> <Link to="education">Education</Link> </li>
+        <li>
+          <Link to="/about">
+            <span className="material-symbols-outlined">
+              home
+            </span>
+          </Link>
+        </li>
+        <li><Link to="experience">Experience</Link></li>
+        <li><Link to="skills">Skills</Link></li>
+        <li><Link to="education">Education</Link></li>
       </ul>
-      <Outlet/>
+
+      {isAboutRoot && <Nyumbani />}
+      <Outlet />
     </div>
-  )
+  );
 }
