@@ -10,8 +10,8 @@ const Footer = () => {
             <div> <span>&copy;</span> {thisYear} Wilfred Mamboleo Tinega </div>
             <ul>
                 <li><a href="https://www.linkedin.com/in/wilfredtinega" class="bi-linkedin"></a></li>
-                <li><a href="https://github.com/lowkieman" class="bi-github"></a></li>
-                <li><a href="https://x.com/tinegawilfred" class="bi-twitter"></a></li> 
+                <li><a href="https://github.com/wilfredtinega" class="bi-github"></a></li>
+                <li><a href="https://x.com/wilfredtinega" class="bi-twitter"></a></li> 
                 <li><a href='mailTo:tinegamamboleo@gmail.com' class="bi-envelope"></a> </li>
                 <li><a href="tel:+254740781289" class="bi-telephone"></a></li>       
             </ul>
