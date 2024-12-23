@@ -474,13 +474,8 @@ h1 span a {
   box-shadow: 0 0 1rem white;
 }
 
-.projects-page .navbar-project h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
 .projects-page .navbar-project ul {
-  margin: 0;
+  margin: 0.5rem 0 0 0;
   padding: 0;
   list-style-type: none;
   display: flex;

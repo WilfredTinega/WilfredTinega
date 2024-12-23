@@ -1,39 +1,55 @@
 import React from 'react'
 import "./projects.css"
-import { Assests } from '../assets/Assests'
 
 function VanillaJS() {
   return (
-    <div className='projects'>
+    <div className='projects vanillajs'>
       <div className='project-box'>
-            <a href="getspeechfromtextinstantly.netlify.app"><span class="material-symbols-outlined">linked_services</span></a>
-            <div className='projects-stacks'>
-                <span>Javascript</span>
-                <span>SASS</span>
-                <span>CSS3</span>
-                <span>HTML5</span>
-            </div>
+        <div className='wrapper one'>
+          <div>
+            <h3>Text To Speech</h3>
+            <a href="getspeechfromtextinstantly.netlify.app">here</a> 
+          </div>
+        </div>
+        <div className='projects-stacks'>
+          <span>Javascript</span>
+          <span>SASS</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
       </div>
 
       <div className='project-box'>
-            <a href="quality-image-search-engine.netlify.app/"><span class="material-symbols-outlined">linked_services</span></a>
-            <div className='projects-stacks'>
-                <span>Javascript</span>
-                <span>Rest API</span>
-                <span>SASS</span>
-                <span>CSS3</span>
-                <span>HTML5</span>
-            </div>
+        <div className="wrapper two">
+          <div>
+            <h3>Image Search Engine</h3>
+            <a href="quality-image-search-engine.netlify.app/"> here</a>
+          </div>
+          
+        </div>
+        <div className='projects-stacks'>
+          <span>Javascript</span>
+          <span>Rest API</span>
+          <span>SASS</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
       </div>
 
       <div className='project-box'>
-            <a href="dijitooclock.netlify.app"><span class="material-symbols-outlined">linked_services</span></a>
-            <div className='projects-stacks'>
-                <span>Javascript</span>
-                <span>SASS</span>
-                <span>CSS3</span>
-                <span>HTML5</span>
-            </div>
+        <div className="wrapper three">
+          <div>
+            <h3>Digital Clock</h3>
+            <a href="dijitooclock.netlify.app">here</a>
+          </div>
+          
+        </div>
+        <div className='projects-stacks'>
+          <span>Javascript</span>
+          <span>SASS</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
       </div>
     </div>
   )
