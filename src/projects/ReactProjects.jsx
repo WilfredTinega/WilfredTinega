@@ -8,7 +8,7 @@ function ReactProjects() {
         <div className="wrapper four">
           <div>
             <h3>Gemini AI</h3>
-            <a href="https://aicegemini.vercel.app/">here</a>
+            <a href="https://aicemamboleo.netlify.app/">here</a>
           </div>
         </div>
         <div className='projects-stacks'>
@@ -24,7 +24,7 @@ function ReactProjects() {
         <div className="wrapper five">
           <div>
             <h3>Murang'a University of Technology</h3>
-            <a href="mutportal.netlify.app">here</a>
+            <a href="https://mutportal.netlify.app/">here</a>
           </div>
         </div>
         <div className='projects-stacks'>
