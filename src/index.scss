@@ -19,34 +19,21 @@ body{
     }
 }
 
-
 #root{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(147, 165, 240, 0.233);
     animation: fadeIn 1s;
 
-}
-
-@mixin wrap{
-    span{
-        background-image: linear-gradient(90deg, lime,red,blue);
-        background-clip: text;
-        color: transparent;
-    }
     a{
         text-decoration: none;
+        padding: 0;
+        color: gray;
     }
-}
-
-h1{ 
-    span{
-        @include wrap;
-    }  
 
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -63,10 +50,8 @@ h1{
         a{
             text-decoration: none;
             cursor: pointer;
+
             span{
-                    background-image: linear-gradient(90deg, lime,red,blue);
-                    background-clip: text;
-                    color: transparent;
                     font-size: 3rem;
                     cursor: pointer;
                 }
@@ -103,20 +88,13 @@ h1{
         li:hover{
             background-color: rgba(116, 116, 246, 0.134);
         }
-
-        a{
-            text-decoration: none;
-            padding: 0;
-            color: gray;
-        }
     }
 }
 
 @media (max-width:40rem) {
     .navbar{
         display: block;
-        @include wrap;
-    
+
         .navbar-heading{
             display: flex;
             justify-content: space-between;
@@ -154,39 +132,54 @@ h1{
 }
 
 .home-page{
-    @include wrap;
     animation-name: fadeIn;
     animation-duration: 1s;
 
+    h2{
+        text-align: center;
+    }
+
     .home-top{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-        justify-content: space-between;
-        align-items: center;
         animation-name: fadeIn;
         animation-duration: 1.5s;
         padding: 1rem;
 
         .content{
             margin: 0 auto;
+            
             p{
                 font-size: 2rem;
+                text-align: center;
             }
-        }
 
-        .image{
-            margin: 0 auto;
-            border-radius: 2rem;
+            .resume{
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
 
-            img{
-                max-width: 90%;
-                height: 40vh;
-                border-radius:inherit;
-                background-color: rgba(183, 183, 244, 0.3);
+                a{
+                    text-align: center;
+
+                    span{
+                        font-size: 3rem;
+                    }
+                }
             }
         }
     }
 
+    @media screen and (max-width: 40rem) {
+        .home-top{
+            animation-name: fadeIn;
+            animation-duration: 2s;    
+            .content{                
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+    }
     .home-bottom{
         margin: 0 auto;
         animation-name: fadeIn;
@@ -206,13 +199,12 @@ h1{
             flex-wrap: wrap;
             justify-content: center;
             list-style-type: none;
-            margin: 0;
-            padding: 0;
+            padding: 1rem;
 
             li{
                 img{
-                    width: 30px;
-                    height: 30px
+                    width: 25px;
+                    height: 25px
                 }
             }
             
@@ -221,13 +213,11 @@ h1{
 }
 
 .about-page{
-    @include wrap;
     background-image: radial-gradient(circle at center,rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("https://th.bing.com/th/id/OIG3.pBF7_WoGmk7zbv9AlTVE?pid=ImgGn");
     background-blend-mode:darken;
     min-height: 75vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    color: white;
 
     h1{
         text-align: center;
@@ -257,7 +247,6 @@ h1{
     }
 
     .experience-page{
-        @include wrap;
 
         h1{
             text-align: right;
@@ -286,13 +275,13 @@ h1{
             img{
                 width: 100%;
                 height: 30vh;
+                opacity: 0.7;
 
                 }
             }
         }
 
     .skills-page{
-        @include wrap;
 
         h1{
             margin: 0;
@@ -334,9 +323,8 @@ h1{
     }
     
     .education-page{
-        @include wrap;
 
-        h1{
+        h2{
             text-align: right;
             padding-right: 1rem;
         }
@@ -357,6 +345,7 @@ h1{
                 height: 40vh;
                 background-color: white;
                 border-radius: 1rem 1rem 0px 0px;
+                opacity: 0.7;
             }
 
             div{
@@ -385,10 +374,6 @@ h1{
         font-size: 1.3rem;
         margin: 0;
         text-align: justify;
-
-        b,tt,strong,code{
-            color: lime;
-        }
     }
 }
 
@@ -404,15 +389,13 @@ h1{
 }
 
 .blog-page{
-    @include wrap;
     margin: auto;
 }
 
 .contact-page{
     margin: 0 auto;
-    @include wrap;
-    background-image: linear-gradient(to right, rgba(0, 255, 0, 0.744), rgba(255, 0, 0, 0.481), rgba(0, 0, 255, 0.481));
     border-radius: 1rem;
+    background: rgba(183, 183, 244, 0.3);
 
     .left{
         border-radius: inherit;
@@ -424,6 +407,7 @@ h1{
                 border-radius: 1rem 1rem 0 0;
 
             }
+
             hr{
                 margin: 0;
                 padding: 0;
@@ -449,10 +433,11 @@ h1{
                     border: none;
                     font-size: 1.2rem;
                     border-radius: 0.2rem;
+                    padding: 5px;
                 }
 
                 input:hover{
-                    box-shadow: 0 0 0.8rem white;
+                    box-shadow: 0 0 5px rgb(15, 5, 5);
                 }
 
                 input:focus{
@@ -607,13 +592,6 @@ h1{
             justify-content: center;
             gap: 1rem;
             align-items: center;
-
-            a,
-            span{
-                background-image: linear-gradient(15deg, lime,red,blue);
-                background-clip: text;
-                color: transparent;
-            }
         }
     }
 
@@ -634,18 +612,9 @@ h1{
             a:hover{
                 text-decoration:underline;
             }
-
-            i,
-            span{
-                background-image: linear-gradient(15deg, lime,red,blue);
-                background-clip: text;
-                color: transparent;
-            }
             
             i:hover{
-                background-image: linear-gradient(15deg, blue,red,lime);
-                background-clip: text;
-                color: transparent;
+                color: lime;
             }
         }
     }

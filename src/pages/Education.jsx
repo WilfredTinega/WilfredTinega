@@ -4,7 +4,7 @@ import { Assests } from '../assets/Assests'
 export default function Education() {
   return (
     <div className='education-page'>
-      <h1><i className="bi-code-slash"></i>Education</h1>
+      <h2><i className="bi-code-slash"></i>Education</h2>
       <div className="education-content">
         <div className="wraper">
           <img src="https://th.bing.com/th/id/R.3df13e64fa53fd5583865778aa3afe53?rik=nVAarwz0KwS3jg&pid=ImgRaw&r=0" alt="mut logo" />

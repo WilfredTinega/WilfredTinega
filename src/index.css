@@ -22,17 +22,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgba(147, 165, 240, 0.233);
   animation: fadeIn 1s;
 }
-
-h1 span span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-h1 span a {
+#root a {
   text-decoration: none;
+  padding: 0;
+  color: gray;
 }
 
 .navbar {
@@ -53,9 +48,6 @@ h1 span a {
   cursor: pointer;
 }
 .navbar .navbar-heading a span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
   font-size: 3rem;
   cursor: pointer;
 }
@@ -86,23 +78,10 @@ h1 span a {
 .navbar .navbar-list li:hover {
   background-color: rgba(116, 116, 246, 0.134);
 }
-.navbar .navbar-list a {
-  text-decoration: none;
-  padding: 0;
-  color: gray;
-}
 
 @media (max-width: 40rem) {
   .navbar {
     display: block;
-  }
-  .navbar span {
-    background-image: linear-gradient(90deg, lime, red, blue);
-    background-clip: text;
-    color: transparent;
-  }
-  .navbar a {
-    text-decoration: none;
   }
   .navbar .navbar-heading {
     display: flex;
@@ -133,19 +112,10 @@ h1 span a {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
-.home-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.home-page a {
-  text-decoration: none;
+.home-page h2 {
+  text-align: center;
 }
 .home-page .home-top {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  justify-content: space-between;
-  align-items: center;
   animation-name: fadeIn;
   animation-duration: 1.5s;
   padding: 1rem;
@@ -155,16 +125,27 @@ h1 span a {
 }
 .home-page .home-top .content p {
   font-size: 2rem;
+  text-align: center;
 }
-.home-page .home-top .image {
+.home-page .home-top .content .resume {
   margin: 0 auto;
-  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
 }
-.home-page .home-top .image img {
-  max-width: 90%;
-  height: 40vh;
-  border-radius: inherit;
-  background-color: rgba(183, 183, 244, 0.3);
+.home-page .home-top .content .resume a {
+  text-align: center;
+}
+.home-page .home-top .content .resume a span {
+  font-size: 3rem;
+}
+@media screen and (max-width: 40rem) {
+  .home-page .home-top {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+  .home-page .home-top .content p {
+    font-size: 1rem;
+  }
 }
 .home-page .home-bottom {
   margin: 0 auto;
@@ -184,12 +165,11 @@ h1 span a {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  padding: 1rem;
 }
 .home-page .home-bottom .stacks li img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .about-page {
@@ -198,15 +178,6 @@ h1 span a {
   min-height: 75vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  color: white;
-}
-.about-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.about-page a {
-  text-decoration: none;
 }
 .about-page h1 {
   text-align: center;
@@ -229,14 +200,6 @@ h1 span a {
 .about-page .about-nav li:hover {
   background-color: rgba(183, 183, 244, 0.3);
   border-radius: 5rem;
-}
-.about-page .experience-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.about-page .experience-page a {
-  text-decoration: none;
 }
 .about-page .experience-page h1 {
   text-align: right;
@@ -262,14 +225,7 @@ h1 span a {
 .about-page .experience-page .wraper img {
   width: 100%;
   height: 30vh;
-}
-.about-page .skills-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.about-page .skills-page a {
-  text-decoration: none;
+  opacity: 0.7;
 }
 .about-page .skills-page h1 {
   margin: 0;
@@ -300,15 +256,7 @@ h1 span a {
 .about-page .skills-page .skills .skill:hover {
   background-color: rgba(183, 183, 244, 0.7);
 }
-.about-page .education-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.about-page .education-page a {
-  text-decoration: none;
-}
-.about-page .education-page h1 {
+.about-page .education-page h2 {
   text-align: right;
   padding-right: 1rem;
 }
@@ -327,6 +275,7 @@ h1 span a {
   height: 40vh;
   background-color: white;
   border-radius: 1rem 1rem 0px 0px;
+  opacity: 0.7;
 }
 .about-page .education-page .wraper div {
   padding: 1rem;
@@ -350,9 +299,6 @@ h1 span a {
   margin: 0;
   text-align: justify;
 }
-.nyumbani p b, .nyumbani p tt, .nyumbani p strong, .nyumbani p code {
-  color: lime;
-}
 
 @media (orientation: portrait) {
   .nyumbani {
@@ -367,27 +313,11 @@ h1 span a {
 .blog-page {
   margin: auto;
 }
-.blog-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.blog-page a {
-  text-decoration: none;
-}
 
 .contact-page {
   margin: 0 auto;
-  background-image: linear-gradient(to right, rgba(0, 255, 0, 0.744), rgba(255, 0, 0, 0.481), rgba(0, 0, 255, 0.481));
   border-radius: 1rem;
-}
-.contact-page span {
-  background-image: linear-gradient(90deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
-.contact-page a {
-  text-decoration: none;
+  background: rgba(183, 183, 244, 0.3);
 }
 .contact-page .left {
   border-radius: inherit;
@@ -423,9 +353,10 @@ h1 span a {
   border: none;
   font-size: 1.2rem;
   border-radius: 0.2rem;
+  padding: 5px;
 }
 .contact-page .left form .name-email input:hover {
-  box-shadow: 0 0 0.8rem white;
+  box-shadow: 0 0 5px rgb(15, 5, 5);
 }
 .contact-page .left form .name-email input:focus {
   background-color: rgba(183, 183, 244, 0.8);
@@ -549,12 +480,6 @@ h1 span a {
   gap: 1rem;
   align-items: center;
 }
-.footer .footer-social ul a,
-.footer .footer-social ul span {
-  background-image: linear-gradient(15deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
 .footer .footer-nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -572,16 +497,8 @@ h1 span a {
 .footer .footer-nav li a:hover {
   text-decoration: underline;
 }
-.footer .footer-nav li i,
-.footer .footer-nav li span {
-  background-image: linear-gradient(15deg, lime, red, blue);
-  background-clip: text;
-  color: transparent;
-}
 .footer .footer-nav li i:hover {
-  background-image: linear-gradient(15deg, blue, red, lime);
-  background-clip: text;
-  color: transparent;
+  color: lime;
 }
 
 /*# sourceMappingURL=index.css.map */

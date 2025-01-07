@@ -6,7 +6,7 @@ export default function Home() {
     <div className='home-page'>
       <div className='home-top'>
         <div className='content'>
-          <h1><span><i class="bi-code-slash"></i>Hello I am...</span></h1>
+          <h2><span><i class="bi-code-slash"></i>Hello I am...</span></h2>
           <p>
             <tt>Electrical </tt>
             <tt>and </tt>
@@ -25,13 +25,13 @@ export default function Home() {
             <tt>For </tt>
             <tt>Web</tt>
           </p>
-        </div>
-        <div className='image'>
-          <img src={Assests.lowkieman} alt=""/>
+          <div className='resume'>
+            <a href="./src/assets/WilfredTinega.pdf" title='Wilfred Tinega Resume'><span class="material-symbols-outlined">cloud_download</span></a>
+          </div>
         </div>
       </div>
       <div className='home-bottom'>
-        <h1><span><i class="bi-code-slash"></i>Stacks</span></h1>
+        <h2><span><i class="bi-code-slash"></i>Stacks</span></h2>
         <ul class="stacks">
           <li><img src={Assests.js} alt="" /></li>
           <li><img src={Assests.html5} alt="" /></li>
