@@ -16,7 +16,7 @@ export default function Home() {
                 <span class="material-symbols-outlined">cloud_download</span> <i>Download Resume</i>
               </a>
               <a href={Assests.electrical} title='Electrical Engineer Resume'>
-                <span class="material-symbols-outlined">cloud_download</span> <i>Download Resume</i>
+                <span class="material-symbols-outlined">cloud_download</span> <i>Download EEE Resume</i>
               </a>
             </div>
           </div>
