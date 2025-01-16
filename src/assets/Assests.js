@@ -12,7 +12,7 @@ import sass from "./sass.svg";
 import react from "./react.svg"
 import jquery from "./jquery.svg"
 import npm from "./npm.svg"
-import DP from "./dp.jpg"
+import DP from "./DP.jpg"
 import frontend from "./frontend.pdf"
 import electrical from "./electrical.pdf"
 
