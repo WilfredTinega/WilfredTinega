@@ -6,27 +6,22 @@ export default function Home() {
     <div className='home-page'>
       <div className='home-top'>
         <div className='content'>
-          <h2><span><i class="bi-code-slash"></i>Hello I am...</span></h2>
-          <p>
-            <tt>Electrical </tt>
-            <tt>and </tt>
-            <tt>Electronics </tt>
-            <tt>Engineer</tt>         
-         </p>
-          <p>
-            <tt>Front-</tt>
-            <tt>End </tt>
-            <tt>Web </tt>
-            <tt>Developer</tt>
-          </p>
-          <p>
-            <tt>I </tt>
-            <tt>Build </tt>
-            <tt>For </tt>
-            <tt>Web</tt>
-          </p>
-          <div className='resume'>
-            <a href="./src/assets/WilfredTinega.pdf" title='Wilfred Tinega Resume'><span class="material-symbols-outlined">cloud_download</span></a>
+          <div className='top-left'>
+            <h2><span><i class="bi-code-slash"></i>Hello I am...</span></h2>
+            <p>Electrical and Electronics Engineer</p>
+            <p>Front-End Web Developer</p>
+            <p>I Build For Web</p>
+            <div className='resume'>
+              <a href={Assests.frontend} title='Front-End Web Developer Resume'>
+                <span class="material-symbols-outlined">cloud_download</span> <i>Download Resume</i>
+              </a>
+              <a href={Assests.electrical} title='Electrical Engineer Resume'>
+                <span class="material-symbols-outlined">cloud_download</span> <i>Download Resume</i>
+              </a>
+            </div>
+          </div>
+          <div className='display-picture'>
+            <span><img src={Assests.DP} alt="dp" /></span>
           </div>
         </div>
       </div>

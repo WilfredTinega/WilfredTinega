@@ -146,23 +146,67 @@ body{
 
         .content{
             margin: 0 auto;
-            
-            p{
-                font-size: 2rem;
-                text-align: center;
-            }
+            display: flex;
+            justify-content: center;
 
-            .resume{
-                margin: 0 auto;
+            .top-left{
+
+                p{
+                    font-size: 2rem;
+                    text-align: right;
+                }
+    
+                .resume{
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    a{
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        padding: 5px;
+    
+                        span{
+                            font-size: 3rem;
+                            padding: 0 5px;
+                        }
+                        
+                        i{
+                            padding: 0 5px;
+                        }
+                    }
+
+                    a:hover{
+                        background: linear-gradient(90deg, skyblue, lime);
+
+                        i{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            
+            .display-picture{
                 display: flex;
+                align-items: center;
                 justify-content: center;
 
-                a{
-                    text-align: center;
+                span{
+                    background: linear-gradient(to right, skyblue, lime);
+                    padding: 5px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
 
-                    span{
-                        font-size: 3rem;
-                    }
+                img{
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 50%;
                 }
             }
         }
@@ -171,15 +215,62 @@ body{
     @media screen and (max-width: 40rem) {
         .home-top{
             animation-name: fadeIn;
-            animation-duration: 2s;    
-            .content{                
-                p{
-                    font-size: 1rem;
+            animation-duration: 2s;
+
+            .content{
+                margin: 0 auto;
+                display: block;
+                justify-content: center;
+    
+                .top-left{
+    
+                    p{
+                        font-size: 1rem;
+                        text-align: center;
+                    }
+        
+                    .resume{
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+        
+                        a{
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+        
+                            span{
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+                
+                .display-picture{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+    
+                    span{
+                        background: linear-gradient(to right, skyblue, lime);
+                        padding: 1px;
+                        border-radius: 0.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+    
+                    img{
+                        width: 250px;
+                        height: 200px;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
         
     }
+
     .home-bottom{
         margin: 0 auto;
         animation-name: fadeIn;

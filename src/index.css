@@ -122,29 +122,101 @@ body {
 }
 .home-page .home-top .content {
   margin: 0 auto;
-}
-.home-page .home-top .content p {
-  font-size: 2rem;
-  text-align: center;
-}
-.home-page .home-top .content .resume {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-.home-page .home-top .content .resume a {
-  text-align: center;
+.home-page .home-top .content .top-left p {
+  font-size: 2rem;
+  text-align: right;
 }
-.home-page .home-top .content .resume a span {
+.home-page .home-top .content .top-left .resume {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.home-page .home-top .content .top-left .resume a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 5px;
+}
+.home-page .home-top .content .top-left .resume a span {
   font-size: 3rem;
+  padding: 0 5px;
+}
+.home-page .home-top .content .top-left .resume a i {
+  padding: 0 5px;
+}
+.home-page .home-top .content .top-left .resume a:hover {
+  background: linear-gradient(90deg, skyblue, lime);
+}
+.home-page .home-top .content .top-left .resume a:hover i {
+  color: black;
+}
+.home-page .home-top .content .display-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page .home-top .content .display-picture span {
+  background: linear-gradient(to right, skyblue, lime);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page .home-top .content .display-picture img {
+  width: 100%;
+  height: 250px;
+  border-radius: 50%;
 }
 @media screen and (max-width: 40rem) {
   .home-page .home-top {
     animation-name: fadeIn;
     animation-duration: 2s;
   }
-  .home-page .home-top .content p {
+  .home-page .home-top .content {
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+  }
+  .home-page .home-top .content .top-left p {
     font-size: 1rem;
+    text-align: center;
+  }
+  .home-page .home-top .content .top-left .resume {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .home-page .home-top .content .top-left .resume a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .home-page .home-top .content .top-left .resume a span {
+    font-size: 2rem;
+  }
+  .home-page .home-top .content .display-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-page .home-top .content .display-picture span {
+    background: linear-gradient(to right, skyblue, lime);
+    padding: 1px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-page .home-top .content .display-picture img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
   }
 }
 .home-page .home-bottom {

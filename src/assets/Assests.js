@@ -12,6 +12,9 @@ import sass from "./sass.svg";
 import react from "./react.svg"
 import jquery from "./jquery.svg"
 import npm from "./npm.svg"
+import DP from "./dp.jpg"
+import frontend from "./frontend.pdf"
+import electrical from "./electrical.pdf"
 
 export const Assests = {
     close,
@@ -27,5 +30,8 @@ export const Assests = {
     sass,
     react,
     jquery,
-    npm
+    npm,
+    DP,
+    frontend,
+    electrical
 }
