@@ -1,28 +1,21 @@
-import React from 'react'
-import { Assests } from '../assets/Assests'
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom';
  
 export const Navbar = () => {
+  const [visible, setVisible] = useState(false)
  
   return (
-    <div className="navbar">
-        <div className="navbar-heading">
-          <Link to= "/"><span>Wilfred Tinega</span></Link>
-          <div className='dark-mode'>
-            <img src={Assests.light_mode} alt=""/>
-          </div>
-          <Link to="/about">
-          <div className='bi-person'></div></Link>
-        </div>
-        <div className='dark-mode1'>
-            <img src={Assests.light_mode} alt=""/>
-        </div>
-        <ul className="navbar-list">
-            <li> <Link to="/about">About</Link></li>
-            <li> <Link to="/projects">Projects</Link> </li>
-            <li> <Link to="/blog">Blogs</Link> </li>
-            <li> <Link to="/contact-me">Contact Me</Link> </li>
+    <div className="flex items-center justify-between sm:px-5 md:px-10 lg:px-15 bg-slate-200">
+        <Link to= "/">Wilfred Tinega</Link>
+        <ul className="flex items-center justify-between gap-2">
+            <NavLink to="/about"  className="flex flex-col items-center gap-1">About</NavLink>
+            <NavLink to="/projects"  className="flex flex-col items-center gap-1">Projects</NavLink>
+            <NavLink to="/blog"  className="flex flex-col items-center gap-1">Blogs</NavLink>
+            <NavLink to="/contact-me"  className="flex flex-col items-center gap-1">Contact Me</NavLink>
         </ul>
+        
+        <div className='bi-list sm:hidden'></div>
+        
     </div>
   )
 }
