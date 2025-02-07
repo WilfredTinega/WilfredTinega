@@ -1,13 +1,13 @@
-import React from 'react'
-import "./projects.css"
-import VanillaJS from './VanillaJS'
+import React from 'react';
+import VanillaJS from './VanillaJS';
 
 function HtmlCss() {
   return (
-    <>
-      <VanillaJS/>
-    </>
-  )
+    <div className="html-css-projects-page">
+      <h1 className="text-3xl font-bold text-blue-600 mb-6">HTML & CSS Projects</h1>
+      <VanillaJS />
+    </div>
+  );
 }
 
-export default HtmlCss
+export default HtmlCss;

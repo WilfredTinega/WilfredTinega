@@ -28,6 +28,8 @@ export default function () {
           <Route path='education' element = {<Education/>}/>
         </Route>
 
+        <Route path='education' element = {<Education/>}/>
+
         <Route path='/projects' element = {<Projects />}>
           <Route path='front-end' element = {<Frontend/>}/>
           <Route path='react-projects' element = {<ReactProjects/>}/>
@@ -36,7 +38,7 @@ export default function () {
         </Route>
         
         <Route path='/blog' element = {<Blogs />} />
-        <Route path='/contact-me' element = {<Contacts />} />
+        <Route path='/contacts' element = {<Contacts />} />
       </Routes>
       <Footer />
     </>

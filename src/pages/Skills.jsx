@@ -1,43 +1,51 @@
-import React from 'react'
+import React from 'react';
 
 export default function Skills() {
   return (
-    <div className='skills-page'>
-        <h1><i className="bi-code-slash"></i>skills</h1>
-        <div className='skills'>
-            <div className="skill">
-                <h4>technical skills</h4>
-                <ul>
-                    <li>Building services and protection design</li>
-                    <li>installation of 3-phase and single phase motor</li>
-                    <li>design and installation of DoL</li>
-                    <li>design and installation of ATS/changeover switch</li>
-                    <li>troubleshooting and maintenance of motors and all types of wiring</li>
-                </ul>
-            </div>
+    <div className="skills-page bg-gray-100 min-h-screen p-6">
+      {/* Page Title */}
+      <h1 className="text-3xl font-bold text-blue-600 mb-6 flex items-center gap-2">
+        <i className="bi bi-code-slash"></i>
+        Skills
+      </h1>
 
-            <div className="skill">
-                <h4>soft skills</h4>
-                <ul>
-                    <li>microsoft office suite</li>
-                    <li>circuit design</li>
-                    <li>3D/2D CAD</li>
-                    <li>embedded system progamming</li>
-                </ul>
-            </div>
-
-            <div className="skill">
-                <h4>other skills</h4>
-                <ul>
-                    <li>front end web developer</li>
-                    <li>C programming language </li>
-                    <li>c++(plus) programming language</li>
-                    <li>assembly language programming</li>  
-                    <li>Python</li>                      
-                </ul>
-            </div>
+      {/* Skills Section */}
+      <div className="skills grid md:grid-cols-3 gap-6">
+        {/* Technical Skills */}
+        <div className="skill bg-white shadow-lg rounded-lg p-4">
+          <h4 className="text-xl font-semibold text-blue-500 mb-4">Technical Skills</h4>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Building services and protection design</li>
+            <li>Installation of 3-phase and single-phase motors</li>
+            <li>Design and installation of DoL (Direct on Line)</li>
+            <li>Design and installation of ATS/changeover switch</li>
+            <li>Troubleshooting and maintenance of motors and wiring</li>
+          </ul>
         </div>
-        
+
+        {/* Soft Skills */}
+        <div className="skill bg-white shadow-lg rounded-lg p-4">
+          <h4 className="text-xl font-semibold text-blue-500 mb-4">Soft Skills</h4>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Microsoft Office Suite</li>
+            <li>Circuit design</li>
+            <li>3D/2D CAD</li>
+            <li>Embedded system programming</li>
+          </ul>
+        </div>
+
+        {/* Other Skills */}
+        <div className="skill bg-white shadow-lg rounded-lg p-4">
+          <h4 className="text-xl font-semibold text-blue-500 mb-4">Other Skills</h4>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li>Front-end web development</li>
+            <li>C programming language</li>
+            <li>C++ programming language</li>
+            <li>Assembly language programming</li>
+            <li>Python programming</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
