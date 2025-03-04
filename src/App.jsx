@@ -14,11 +14,13 @@ import Frontend from './projects/Frontend'
 import ReactProjects from './projects/ReactProjects'
 import VanillaJS from './projects/VanillaJS'
 import HtmlCss from './projects/HtmlCss'
+import { ToastContainer } from 'react-toastify'
 
 export default function () {
   return (
     <>
       <Navbar />
+      <ToastContainer/>
       <Routes>
         <Route path='/' element = {<Home />} />
 

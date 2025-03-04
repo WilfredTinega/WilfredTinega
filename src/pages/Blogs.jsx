@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { toast } from 'react-toastify';
 import Title from '../components/Tittle';
 import loading from '../assets/loading.gif'
 
@@ -57,7 +56,6 @@ const Blogs = () => {
     return publishedTime.toISOString().split('T')[0]; // Return YYYY-MM-DD
   };
   
-
   useEffect(()=>{
     searchNews("education")
   },[])
