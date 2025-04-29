@@ -10,7 +10,7 @@ import Projects from './pages/Projects'
 
 export default function () {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
       <ToastContainer/>
       <Routes>
@@ -20,5 +20,5 @@ export default function () {
         <Route path='/contacts' element = {<Contacts />} />
       </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )}
