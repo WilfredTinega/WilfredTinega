@@ -5,15 +5,15 @@ export const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="flex justify-between items-center py-4 px-8 bg-black text-white text-lg shadow-md">
-      {/* Logo/Brand */}
-      <Link className="text-2xl font-bold text-[#0ea5e9]" to="/">
-        Wilfred Tinega
-      </Link>
+    <div className="flex justify-between md:justify-around items-center py-4 px-8 bg-gray-950  border-b text-green-500 text-lg">
+      <div className=''>
+        <NavLink className="text-2xl font-bold border-0 outline-0 text-blue-500 hover:text-green-500  " to="/"><span className='text-green-500'>M</span>AMBOLEO</NavLink>
+      </div>
+      
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex gap-6">
-        {['About', 'Projects', 'Blog', 'Contacts'].map((item) => (
+      <div className="hidden md:flex gap-6 text-xl">
+        {['About', 'Projects', 'Contacts'].map((item) => (
           <NavLink
             key={item}
             to={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -39,8 +39,8 @@ export const Navbar = () => {
 
       {/* Sidebar for Mobile */}
       <div
-        className={`fixed top-0 right-0 bottom-0 w-3/4 max-w-sm bg-black text-white shadow-lg transition-transform duration-300 ease-in-out transform ${
-          visible ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 right-0 bottom-0 w-full h-max max-w-sm bg-black text-white shadow-lg transition-transform duration-300 ease-in-out transform ${
+    visible ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         {/* Close Button */}
@@ -56,13 +56,13 @@ export const Navbar = () => {
 
         {/* Mobile Menu Links */}
         <div className="flex flex-col">
-          {['About', 'Projects', 'Education', 'Blog', 'Contacts'].map(
+          {['About', 'Projects', 'Contacts'].map(
             (item) => (
               <NavLink
                 key={item}
                 onClick={() => setVisible(false)}
                 to={`/${item.toLowerCase().replace(' ', '-')}`}
-                className="block px-6 py-3 text-lg hover:text-[#0ea5e9] transition-colors"
+                className="block px-6 py-3 text-xl hover:text-[#0ea5e9] transition-colors"
               >
                 {item}
               </NavLink>

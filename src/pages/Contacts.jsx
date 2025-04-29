@@ -8,7 +8,7 @@ export default function Contacts() {
     setResult("Sending...");
     const formData = new FormData(event.target);
 
-    const apiKey = import.meta.env.VITE_ACCESS_KEY;
+    const accessKey = '25e5b783-4aae-4a24-b547-4b32f5c405fe';
 
     if (!apiKey) {
       console.error("API Key not found!");
@@ -16,7 +16,7 @@ export default function Contacts() {
       return;
     }
 
-    formData.append("access_key", apiKey);
+    formData.append("access_key", accessKey);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -38,10 +38,10 @@ export default function Contacts() {
     <div className="contact-page bg-gray-900 text-white py-12 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-blue-400">
+          <h1 className="text-2xl md:text-3xl font-bold text-blue-500">
             Get in Touch
           </h1>
-          <hr className="mt-4 border-blue-400 w-1/4 mx-auto" />
+          <hr className="mt-4 border-green-500 w-1/4 mx-auto" />
         </div>
 
         <form

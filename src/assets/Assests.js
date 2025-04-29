@@ -15,6 +15,8 @@ import npm from "./npm.svg"
 import DP from "./DP.jpg"
 import frontend from "./frontend.pdf"
 import electrical from "./electrical.pdf"
+import wmt from "./wmt.jpg"
+import twitter from "./twitter.svg"
 
 export const Assests = {
     close,
@@ -33,5 +35,7 @@ export const Assests = {
     npm,
     DP,
     frontend,
-    electrical
+    wmt,
+    electrical,
+    twitter
 }

@@ -1,55 +1,119 @@
-import React from 'react';
-import { Link,NavLink, Outlet, useLocation } from 'react-router-dom';
-import Frontend from '../projects/Frontend';
+import React from 'react'
 
-export default function Projects() {
-  const location = useLocation();
-  const isLocation = location.pathname === '/projects';
-
+const Projects = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Navbar for Project Categories */}
-      <div className="border-b border-gray-800">
-        <ul className="flex justify-center gap-6 py-4">
-          <li>
-            <NavLink
-              to="front-end"
-              className="text-lg font-medium hover:text-[#0ea5e9] transition-colors"
-            >
-              Front-End
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="react-projects"
-              className="text-lg font-medium hover:text-[#0ea5e9] transition-colors"
-            >
-              React
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="vanillajs"
-              className="text-lg font-medium hover:text-[#0ea5e9] transition-colors"
-            >
-              Javascript
-            </NavLink>
-          </li>
-          <li>
+    <>
+    <div className="projects-page bg-gray-100 p-2">
+        <div className="text-center mb-8">
+            <h1 className="text-2xl md:text-3xl font-bold text-blue-500">Projects</h1>
+            <hr className="mt-4 border-green-500 w-1/16 mx-auto" />
+        </div>
+        <div className="projects grid gap-6 md:grid-cols-4">
+            
+            {/* Gemini AI Project */}
+            <div className="project-box bg-white shadow-lg rounded-lg p-4">
+            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
+                <h3 className="text-xl font-semibold">Gemini AI</h3>
+                <a href="https://aicemamboleo.netlify.app/" className="underline hover:text-blue-300">View Project</a>
+            </div>
+            <div className="projects-stacks flex flex-wrap gap-2">
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">Gemini API</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+            </div>
+            </div>
 
-          </li>
-        </ul>
-      </div>
+            {/* Murang'a University of Technology Project */}
+            <div className="project-box bg-white shadow-lg rounded-lg p-4">
+            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
+                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
+                <a
+                href="https://mutportal.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-300"
+                >
+                View Project
+                </a>
+            </div>
+            <div className="projects-stacks flex flex-wrap gap-2">
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+            </div>
+            </div>
 
-      {/* Projects Container */}
-      <div className="px-6 py-10 max-w-6xl mx-auto">
-        {isLocation && (
-          <div className="mb-8">
-            <Frontend />
-          </div>
-        )}
-        <Outlet />
-      </div>
+            {/* Murang'a University of Technology Project */}
+            <div className="project-box bg-white shadow-lg rounded-lg p-4">
+            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
+                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
+                <a
+                href="https://mutportal.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-300"
+                >
+                View Project
+                </a>
+            </div>
+            <div className="projects-stacks flex flex-wrap gap-2">
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+            </div>
+            </div>
+
+            {/* Murang'a University of Technology Project */}
+            <div className="project-box bg-white shadow-lg rounded-lg p-4">
+            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
+                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
+                <a
+                href="https://mutportal.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-300"
+                >
+                View Project
+                </a>
+            </div>
+            <div className="projects-stacks flex flex-wrap gap-2">
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+            </div>
+            </div>
+
+            {/* Murang'a University of Technology Project */}
+            <div className="project-box bg-white shadow-lg rounded-lg p-4">
+            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
+                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
+                <a
+                href="https://mutportal.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-green-300"
+                >
+                View Project
+                </a>
+            </div>
+            <div className="projects-stacks flex flex-wrap gap-2">
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+            </div>
+            </div>
+
+        </div>
     </div>
-  );
+    
+    </>
+  )
 }
+
+export default Projects
