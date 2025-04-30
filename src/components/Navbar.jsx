@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <div className="flex justify-between md:justify-around items-center py-4 px-8 bg-gray-950  border-b text-green-500 text-lg">
       <div className=''>
-        <NavLink className="text-2xl font-bold border-0 outline-0 text-blue-500 hover:text-green-500  " to="/"><span className='text-green-500'>M</span>AMBOLEO</NavLink>
+        <NavLink className="text-2xl font-bold border-0 outline-0 text-blue-500 hover:text-green-500  " to="/"><span className='bg-gradient-to-l from-green-500 to-blue-500 bg-clip-text text-transparent'>MAMBOLEO</span></NavLink>
       </div>
       
 

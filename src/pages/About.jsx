@@ -5,130 +5,87 @@ import { Assests } from '../assets/Assests';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-300 px-2 sm:px-4 md:px-6 lg:px-10">
+    <div className="min-h-screen bg-gray-900">
+      {/* About Me */}
+<div className="py-12 px-4 md:px-10 bg-gray-800 text-blue-500 font-sans">
 
-      {/*About Me*/}
+{/* Section Header */}
+<div className="text-center mb-12">
+  <h1 className="text-4xl font-bold text-blue-400">About</h1>
+  <div className="h-1 w-16 bg-green-500 mx-auto mt-2 rounded"></div>
+</div>
+
+{/* Intro Section */}
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+  <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all duration-300">
+    <div className="flex flex-col-reverse items-center gap-4 text-center">
+      <p className="text-lg text-gray-700">
+        I'm Wilfred Tinega, a Front-End Web Developer and Electrical and Electronics Engineering student at Murang'a University of Technology.
+      </p>
       <div>
-        <div className='text-center py-2'>
-          <h1 className="text-4xl text-blue-500">About</h1>
-          <p className='h-0.5 bg-green-500 w-1/8 m-auto'></p>
-        </div>
-
-        <div className=''>
-          <div className=''>
-            <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div><i className='bi-cpu text-9xl'></i></div>
-              <div>I'm Wilfred Tinega, a Front-End Web Developer and Electrical and Electronics Engineering student at Murang'a University of Technology.</div>
-            </div>
-
-            <div className='flex flex-col md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>I blend a strong technical foundation with a passion for user-focused design to build clean, responsive, and interactive web applications.</div>
-              <div><i className='bi-cpu text-9xl'></i></div>
-            </div>
-
-          </div>
-
-          <div className=''>
-            <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div><i className='bi-cpu text-9xl'></i></div>
-              <div>I specialize in React.js, Tailwind CSS, JavaScript, and modern development tools like Vite and Git.</div>
-              
-            </div>
-
-            <div className='flex flex-col md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>My GitHub repositories reflect both personal exploration and practical application of front-end concepts. Some of my featured work includes:</div>
-              <div><i className='bi-cpu text-9xl'></i></div>
-            </div> 
-          </div>
-
-          <div className=''>
-            <h1>🌐 Notable Projects</h1>
-
-            <div className='flex flex-col-reverse md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>
-                <i className='bi-cpu text-9xl'></i>
-              </div>   
-              <div>aice - A Gemini AI clone powered by the Gemini API and React, enabling smart conversational interactions in a modern UI.</div>
-            </div>
-
-            <div  className='flex flex-col md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>google-flights-clone - A Google Flights UI replica integrating the SkyScrapper API, showcasing real-time flight search functionality.</div>
-              <div>
-                <i className='bi-cpu text-9xl'></i>
-              </div>
-            </div>
-
-            <div  className='flex flex-col-reverse md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>
-                <i className='bi-cpu text-9xl'></i>
-              </div> 
-              <div>real-estate-app - A responsive real estate interface with filtering, searching, and property details built in React and Tailwind.</div>
-            </div>
-
-            <div  className='flex flex-col md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>
-                lowkieman - My personal portfolio website, built to highlight my projects, skills, and development approach.
-              </div>
-              <div>
-                <i className='bi-cpu text-9xl'></i>
-              </div>   
-            </div>
-
-            <div  className='flex flex-col-reverse md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div>
-                <i className='bi-cpu text-9xl'></i>
-              </div> 
-              <div>MUTPortal - A university student portal concept for seamless academic navigation.</div>
-              
-            </div>
-
-            <div  className='flex flex-col md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-            
-              <div>theroom - A visually accurate ALX Fellowship platform clone with well-structured components.</div>
-              <div>
-                <i className='bi-cpu text-9xl'></i>
-              </div> 
-            </div>
-
-          </div>
-
-          <div>
-            <h1>💼 What I Offer</h1>
-
-            <div>
-              <div  className='flex flex-col-reverse md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-              <div><i className='bi-cpu text-9xl'></i></div>
-                <div>I bring a hands-on approach to front-end development, backed by an engineering mindset that values problem-solving and precision.</div>
-                
-              </div>
-
-              <div  className='flex flex-col md:flex-row justify-between items-center gap-0.5 mb-5 bg-white rounded-md'>
-                
-                <div>Whether cloning high-fidelity UIs, integrating APIs,or experimenting with design systems,I ensure that every project is optimized for usability and performance.</div>
-                <div><i className='bi-cpu text-9xl'></i></div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div>
-            <div>
-              <h1>I'm currently open to:</h1>
-              <ul className='p-2'>
-                <li className=''>Freelance or contract-based front-end roles</li>
-                <li className='list-disc'>Collaborative open-source projects</li>
-                <li className='list-disc'>Junior developer opportunities in fast-paced teams</li>
-              </ul>
-            </div>
-            <div>
-              <img src={Assests.terminal} alt="" />
-            </div>
-          </div>
-
-        </div>
-
+        <img className="h-[180px] w-auto object-contain rounded hover:scale-105 transition" src={Assests.wmt} alt="Wilfred Tinega" />
       </div>
+    </div>
+  </div>
+
+  <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p className="text-lg text-gray-700">
+      I blend a strong technical foundation with a passion for user-focused design to build clean, responsive, and interactive web applications.
+    </p>
+    <i className="bi bi-cpu text-4xl text-blue-500"></i>
+  </div>
+
+  <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row-reverse justify-between items-center gap-4">
+    <p className="text-lg text-gray-700">
+      I specialize in React.js, Tailwind CSS, JavaScript, and modern development tools like Vite and Git.
+    </p>
+    <i className="bi bi-cpu text-4xl text-blue-500"></i>
+  </div>
+
+  <div className="p-6 bg-white rounded-2xl shadow hover:shadow-lg transition-all duration-300 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p className="text-lg text-gray-700">
+      My GitHub repositories reflect both personal exploration and practical application of front-end concepts. Some of my featured work includes:
+    </p>
+    <i className="bi bi-cpu text-4xl text-blue-500"></i>
+  </div>
+</div>
+
+{/* What I Offer Section */}
+<div className="mb-16 px-2">
+  <h2 className="text-3xl md:text-4xl text-green-400 font-semibold mb-6">💼 What I Offer</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <div className="p-5 bg-white rounded-2xl shadow hover:shadow-lg transition-all flex items-center gap-5">
+      <i className="bi bi-cpu text-4xl text-blue-500"></i>
+      <p className="text-lg text-gray-700">
+        I bring a hands-on approach to front-end development, backed by an engineering mindset that values problem-solving and precision.
+      </p>
+    </div>
+    <div className="p-5 bg-white rounded-2xl shadow hover:shadow-lg transition-all flex items-center gap-5">
+      <p className="text-lg text-gray-700">
+        Whether cloning high-fidelity UIs, integrating APIs, or experimenting with design systems, I ensure that every project is optimized for usability and performance.
+      </p>
+      <i className="bi bi-cpu text-4xl text-blue-500"></i>
+    </div>
+  </div>
+</div>
+
+{/* Open To Section */}
+<div className="flex flex-col md:flex-row justify-center items-center gap-6 bg-gradient-to-tr from-green-500 to-blue-500 text-white p-6 rounded-xl shadow-md">
+  <div className="w-full md:w-2/3">
+    <h2 className="text-2xl font-semibold mb-3 underline underline-offset-4">I'm currently open to:</h2>
+    <ul className="list-disc list-inside text-lg space-y-2">
+      <li>Freelance front-end roles</li>
+      <li>Contract-based roles</li>
+      <li>Collaborative open-source projects</li>
+      <li>Junior developer opportunities</li>
+    </ul>
+  </div>
+  <div className="w-full md:w-1/3">
+    <img src={Assests.terminal} alt="Terminal Illustration" className="w-full h-auto rounded-xl" />
+  </div>
+</div>
+</div>
+
 
       {/*Technologies*/}
       <div className='bg-gray-900 p-2'>
