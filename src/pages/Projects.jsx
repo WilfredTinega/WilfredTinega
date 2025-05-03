@@ -19,7 +19,7 @@ const Projects = () => {
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
                     <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
-                        <a href="https://mawitishop.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                        <a href="https://mawitishop.netlify.app/" title='Shopify' className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
                     </span> 
                 </div>
                 
@@ -41,7 +41,7 @@ const Projects = () => {
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
                     <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
-                        <a href="https://aicemamboleo.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                        <a href="https://aicemamboleo.netlify.app/"title='Gemini AI' className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
                     </span> 
                 </div>
                 
@@ -64,7 +64,7 @@ const Projects = () => {
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
                     <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
-                        <a href="https://to-do-li-st-app.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                        <a href="https://to-do-li-st-app.netlify.app/" title='To-Do List App' className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
                     </span> 
                 </div>
                 
@@ -86,7 +86,7 @@ const Projects = () => {
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
                     <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
-                        <a href="https://getspeechfromtextinstantly.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                        <a href="https://getspeechfromtextinstantly.netlify.app/" title='Text to Speech' className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
                     </span> 
                 </div>
                 
@@ -108,7 +108,7 @@ const Projects = () => {
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
                     <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
-                        <a href="https://getspeechfromtextinstantly.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                        <a href="https://getspeechfromtextinstantly.netlify.app/" title='Text to Speech' className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
                     </span> 
                 </div>
                 

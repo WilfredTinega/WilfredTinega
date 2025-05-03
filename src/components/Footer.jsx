@@ -12,7 +12,8 @@ const Footer = () => {
       <ul className="flex justify-center md:justify-start gap-4 mt-4">
         <li>
           <a
-            href="https://www.linkedin.com/in/wilfredtinega"
+            href="https://www.linkedin.com/in/wilfredtinega" 
+            title='LinkedIn'
             className="text-xl  text-green-500 hover:text-blue-500 transition-colors"
           >
             <i className="bi-linkedin"></i>
@@ -21,13 +22,15 @@ const Footer = () => {
         <li>
           <a
             href="https://github.com/wilfredtinega"
+            title='Github'
             className="text-xl  text-green-500 hover:text-blue-500 transition-colors"
           >
             <i className="bi-github"></i>
           </a>
         </li>
         <li>
-          <a className="text-xl text-green-500 hover:text-blue-500 transition-colors" href="https://x.com/WilfredTinega">
+          <a className="text-xl text-green-500 hover:text-blue-500 transition-colors" href="https://x.com/WilfredTinega"
+          title='X'>
             {/*<img src={Assests.twitter} alt="JavaScript" className="w-5 h-5 block rounded-sm hover:scale-110 transition-transform" />*/}
             <i className="bi-twitter"></i>
           </a>
@@ -36,6 +39,7 @@ const Footer = () => {
         <li>
           <a
             href="mailto:tinegamamboleo@gmail.com"
+            title='eMail'
             className="text-xl  text-green-500 hover:text-blue-500 transition-colors"
           >
             <i className="bi-envelope"></i>
@@ -44,6 +48,7 @@ const Footer = () => {
         <li>
           <a
             href="tel:+254740781289"
+            title='Call Me'
             className="text-xl  text-green-500 hover:text-[#0ea5e9] transition-colors"
           >
             <i className="bi-telephone"></i>

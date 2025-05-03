@@ -10,7 +10,7 @@ export default function Contacts() {
 
     const accessKey = '25e5b783-4aae-4a24-b547-4b32f5c405fe';
 
-    if (!apiKey) {
+    if (!accessKey) {
       console.error("API Key not found!");
       setResult("API Key Error. Check configuration.");
       return;
@@ -56,6 +56,7 @@ export default function Contacts() {
               id="name"
               placeholder="Your Name"
               required
+              autoComplete="yes"
               className="p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
             <input
@@ -64,6 +65,7 @@ export default function Contacts() {
               id="email"
               placeholder="Your Email"
               required
+              autoComplete="yes"
               className="p-3 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>

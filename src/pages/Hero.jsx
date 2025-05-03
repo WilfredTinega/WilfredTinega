@@ -12,27 +12,27 @@ const Hero = () => {
             <div className='flex justify-center'>
                 <ul className="flex justify-center md:justify-start gap-4 mt-4">
                     <li>
-                        <a className="text-xl  text-green-500 hover:text-blue-500  transition-colors" href="https://www.linkedin.com/in/wilfredtinega">
+                        <a className="text-xl  text-green-500 hover:text-blue-500  transition-colors" href="https://www.linkedin.com/in/wilfredtinega" title='LinkedIn Wilfred Tinega'>
                             <i className="bi-linkedin"></i>
                         </a>
                     </li>
                     <li>
-                        <a className="text-xl  text-green-500 hover:text-blue-500  transition-colors" href="https://github.com/wilfredtinega">
+                        <a className="text-xl  text-green-500 hover:text-blue-500  transition-colors" href="https://github.com/wilfredtinega" title='GitHub Wilfred Tinega'>
                             <i className="bi-github"></i>
                         </a>
                     </li>
                     <li>
-                        <a className="text-xl  text-green-500 hover:text-blue-500  transition-colors" href="https://x.com/WilfredTinega">
+                        <a className="text-xl  text-green-500 hover:text-blue-500  transition-colors" href="https://x.com/wmtinega" title='X Wilfred Tinega'>
                             <i className="bi-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a className="text-xl text-green-500 hover:text-blue-500 transition-colors" href="mailto:tinegamamboleo@gmail.com">
+                        <a className="text-xl text-green-500 hover:text-blue-500 transition-colors" href="mailto:tinegamamboleo@gmail.com" title='Send Me eMail'>
                             <i className="bi-envelope"></i>
                         </a>
                     </li>
                     <li>
-                        <a className="text-xl text-green-500 hover:text-blue-500 transition-colors" href="tel:+254740781289">
+                        <a className="text-xl text-green-500 hover:text-blue-500 transition-colors" href="tel:+254740781289" title='Call Me'>
                             <i className="bi-telephone"></i>
                         </a>
                     </li>
