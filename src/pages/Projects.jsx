@@ -3,109 +3,121 @@ import React from 'react'
 const Projects = () => {
   return (
     <>
-    <div className="projects-page bg-gray-100 p-2">
+    <div className="bg-gray-50 px-2 lg:px-20 min-h-screen">
         <div className="text-center mb-8">
-            <h1 className="text-2xl md:text-3xl font-bold text-blue-500">Projects</h1>
-            <hr className="mt-4 border-green-500 w-1/16 mx-auto" />
+            <h1 className="text-4xl md:text-3xl font-bold text-blue-500">Projects</h1>
+            <div className="h-1 w-16 bg-green-500 mx-auto mt-2 rounded"></div>
         </div>
-        <div className="projects grid gap-6 md:grid-cols-4">
-            
+        <div className="projects grid gap-2 md:gap-4 lg:gap-6 md:grid-cols-3 lg:grid-cols-4">
+
+            {/* Shopify Website*/}
+            <div className="bg-white shadow-sm rounded-lg p-4 ">
+            <div className="flex rounded-lg p-2 mb-4 bg-[url('/Shopify1.png')] bg-no-repeat bg-auto">
+                <div className="">
+                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm'>Shopify</div>
+                    <p className='text-md text-green-500'>This is the e-commerce website, front-end optimized...</p>
+                </div>
+                <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
+                    <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
+                        <a href="https://mawitishop.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                    </span> 
+                </div>
+                
+            </div>
+            <div className="projects-stacks flex flex-wrap gap-2">
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">React</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">TailwindCSS</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">HTML5</span>
+            </div>
+            </div>
+
             {/* Gemini AI Project */}
-            <div className="project-box bg-white shadow-lg rounded-lg p-4">
-            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
-                <h3 className="text-xl font-semibold">Gemini AI</h3>
-                <a href="https://aicemamboleo.netlify.app/" className="underline hover:text-blue-300">View Project</a>
+            <div className="bg-white shadow-sm rounded-lg p-4 ">
+            <div className="flex rounded-lg p-2 mb-4 bg-[url('/gemini1.png')] bg-no-repeat bg-auto">
+                <div className="">
+                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm'>Gemini AI</div>
+                    <p className='text-md text-green-500'>A clone of one the LLM from google for text generation...</p>
+                </div>
+                <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
+                    <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
+                        <a href="https://aicemamboleo.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                    </span> 
+                </div>
+                
             </div>
             <div className="projects-stacks flex flex-wrap gap-2">
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">Gemini API</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">React</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">Gemini API</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">HTML5</span>
             </div>
             </div>
 
-            {/* Murang'a University of Technology Project */}
-            <div className="project-box bg-white shadow-lg rounded-lg p-4">
-            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
-                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
-                <a
-                href="https://mutportal.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-green-300"
-                >
-                View Project
-                </a>
+            {/* TO DO APP */}
+            <div className="bg-white shadow-sm rounded-lg p-4 ">
+            <div className="flex rounded-lg p-2 mb-4 bg-[url('/todo1.png')] bg-no-repeat bg-auto">
+                <div className="">
+                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm'>To Do App</div>
+                    <p className='text-md text-green-500'>This is a to do app utilizing web storage...</p>
+                </div>
+                <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
+                    <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
+                        <a href="https://to-do-li-st-app.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                    </span> 
+                </div>
+                
             </div>
             <div className="projects-stacks flex flex-wrap gap-2">
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">JavaScript</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">HTML5</span>
             </div>
             </div>
 
-            {/* Murang'a University of Technology Project */}
-            <div className="project-box bg-white shadow-lg rounded-lg p-4">
-            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
-                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
-                <a
-                href="https://mutportal.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-green-300"
-                >
-                View Project
-                </a>
+            {/* text to speech APP */}
+            <div className="bg-white shadow-sm rounded-lg p-4 ">
+            <div className="flex rounded-lg p-2 mb-4 bg-[url('/t2s1.png')] bg-no-repeat bg-fit">
+                <div className="">
+                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm capitalize'>text to speech</div>
+                    <p className='text-md text-green-500'>This is a to do app utilizing web storage...</p>
+                </div>
+                <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
+                    <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
+                        <a href="https://getspeechfromtextinstantly.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                    </span> 
+                </div>
+                
             </div>
             <div className="projects-stacks flex flex-wrap gap-2">
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">JavaScript</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">HTML5</span>
             </div>
             </div>
 
-            {/* Murang'a University of Technology Project */}
-            <div className="project-box bg-white shadow-lg rounded-lg p-4">
-            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
-                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
-                <a
-                href="https://mutportal.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-green-300"
-                >
-                View Project
-                </a>
+            {/* text to speech APP */}
+            <div className="bg-white shadow-sm rounded-lg p-4 ">
+            <div className="flex rounded-lg p-2 mb-4 bg-[url('/t2s1.png')] bg-no-repeat bg-fit">
+                <div className="">
+                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm capitalize'>text to speech</div>
+                    <p className='text-md text-green-500'>This is a to do app utilizing web text to speech apis...</p>
+                </div>
+                <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
+                    <span className='bg-gradient-to-r from-green-500 to-blue-500 p-0.5 rounded-full flex justify-center items-center'>
+                        <a href="https://getspeechfromtextinstantly.netlify.app/" className=" rounded-full bg-gray-50 "><span className='p-2'>View</span></a>
+                    </span> 
+                </div>
+                
             </div>
             <div className="projects-stacks flex flex-wrap gap-2">
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
-            </div>
-            </div>
-
-            {/* Murang'a University of Technology Project */}
-            <div className="project-box bg-white shadow-lg rounded-lg p-4">
-            <div className="wrapper bg-blue-500 hover:bg-green-500 text-white rounded-lg p-6 mb-4">
-                <h3 className="text-xl font-semibold">Murang'a University of Technology</h3>
-                <a
-                href="https://mutportal.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-green-300"
-                >
-                View Project
-                </a>
-            </div>
-            <div className="projects-stacks flex flex-wrap gap-2">
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">React</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">SASS</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">CSS3</span>
-                <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded">HTML5</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">JavaScript</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">SASS</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">CSS3</span>
+                <span className="bg-gradient-to-r from-green-500 to-blue-500 text-gray-50 px-2 py-1 rounded">HTML5</span>
             </div>
             </div>
 

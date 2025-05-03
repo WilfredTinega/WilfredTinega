@@ -17,8 +17,13 @@ import frontend from "./frontend.pdf"
 import electrical from "./electrical.pdf"
 import wmt from "./wmt.jpg"
 import twitter from "./twitter.svg"
+import gemini from "./gemini.png"
+import Shopify from "./Shopify.png"
+import t2s from "./t2s.png"
+import todo from "./todo.png"
 
 export const Assests = {
+    gemini, Shopify,t2s,todo,
     close,
     light_mode,
     menu,
