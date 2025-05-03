@@ -14,7 +14,7 @@ const Projects = () => {
             <div className="bg-white shadow-sm rounded-lg p-4 ">
             <div className="flex rounded-lg p-2 mb-4 bg-[url('/Shopify1.png')] bg-no-repeat bg-auto">
                 <div className="">
-                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm'>Shopify</div>
+                    <div className='text-xl font-semibold text-blue-500'>Shopify</div>
                     <p className='text-md text-green-500'>This is the e-commerce website, front-end optimized...</p>
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
@@ -36,7 +36,7 @@ const Projects = () => {
             <div className="bg-white shadow-sm rounded-lg p-4 ">
             <div className="flex rounded-lg p-2 mb-4 bg-[url('/gemini1.png')] bg-no-repeat bg-auto">
                 <div className="">
-                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm'>Gemini AI</div>
+                    <div className='text-xl font-semibold text-blue-500'>Gemini AI</div>
                     <p className='text-md text-green-500'>A clone of one the LLM from google for text generation...</p>
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
@@ -59,7 +59,7 @@ const Projects = () => {
             <div className="bg-white shadow-sm rounded-lg p-4 ">
             <div className="flex rounded-lg p-2 mb-4 bg-[url('/todo1.png')] bg-no-repeat bg-auto">
                 <div className="">
-                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm'>To Do App</div>
+                    <div className='text-xl font-semibold text-blue-500'>To Do App</div>
                     <p className='text-md text-green-500'>This is a to do app utilizing web storage...</p>
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
@@ -81,7 +81,7 @@ const Projects = () => {
             <div className="bg-white shadow-sm rounded-lg p-4 ">
             <div className="flex rounded-lg p-2 mb-4 bg-[url('/t2s1.png')] bg-no-repeat bg-fit">
                 <div className="">
-                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm capitalize'>text to speech</div>
+                    <div className='text-xl font-semibold text-blue-500 capitalize'>text to speech</div>
                     <p className='text-md text-green-500'>This is a to do app utilizing web storage...</p>
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>
@@ -103,7 +103,7 @@ const Projects = () => {
             <div className="bg-white shadow-sm rounded-lg p-4 ">
             <div className="flex rounded-lg p-2 mb-4 bg-[url('/t2s1.png')] bg-no-repeat bg-fit">
                 <div className="">
-                    <div className='text-xl font-semibold text-blue-500 backdrop-blur-sm capitalize'>text to speech</div>
+                    <div className='text-xl font-semibold text-blue-500 capitalize'>text to speech</div>
                     <p className='text-md text-green-500'>This is a to do app utilizing web text to speech apis...</p>
                 </div>
                 <div className='flex justify-end items-end text-blue-500 hover:text-green-500'>

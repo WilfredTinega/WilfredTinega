@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
   const [visible, setVisible] = useState(false);
+
+  useEffect(()=>{document.body.classList.toggle("overflow-hidden",visible)},[visible])
 
   return (
     <div className="flex justify-between md:justify-around items-center py-4 px-8 bg-gray-950  border-b text-green-500 text-lg">
@@ -13,7 +15,7 @@ export const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6 text-xl">
-        {['About', 'Projects', 'Contacts'].map((item) => (
+        {['About', 'Projects', 'Contacts', 'More'].map((item) => (
           <NavLink
             key={item}
             to={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -39,7 +41,7 @@ export const Navbar = () => {
 
       {/* Sidebar for Mobile */}
       <div
-        className={`fixed top-0 right-0 bottom-0 w-full h-max max-w-sm bg-black text-white shadow-lg transition-transform duration-300 ease-in-out transform ${
+        className={`fixed top-0 right-0 bottom-0 w-full bg-black text-white shadow-lg transition-transform duration-300 ease-in-out transform ${
     visible ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -56,7 +58,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Links */}
         <div className="flex flex-col">
-          {['About', 'Projects', 'Contacts'].map(
+          {['About', 'Projects', 'Contacts','More'].map(
             (item) => (
               <NavLink
                 key={item}

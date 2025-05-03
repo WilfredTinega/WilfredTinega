@@ -81,7 +81,7 @@ export default function Contacts() {
           ></textarea>
 
           {/* Status Message */}
-          <div className="text-center text-sm text-green-400">
+          <div className="text-center text-sm text-green-500">
             {result}
           </div>
 

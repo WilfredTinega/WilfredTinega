@@ -17,9 +17,9 @@ export default function () {
       
       <Routes>
         <Route path='/' element = {<Home />} />
-        <Route path='/about' element = {<About />} />
-        <Route path='/projects' element = {<Projects/>}/>
-        <Route path='/contacts' element = {<Contacts />} />
+        <Route path='about' element = {<About />} />
+        <Route path='projects' element = {<Projects/>}/>
+        <Route path='contacts' element = {<Contacts />} />
         <Route path='*' element = {<NotFound/>} />
       </Routes>
 
