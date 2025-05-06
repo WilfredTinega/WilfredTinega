@@ -4,7 +4,8 @@ import {NavLink } from 'react-router-dom';
 export const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
-  useEffect(()=>{document.body.classList.toggle("overflow-hidden",visible)},[visible])
+  useEffect(()=>{document.body.classList.toggle("overflow-hidden",visible)},[visible]),
+  useEffect(()=>{document.body.classList.toggle("static",visible)},[visible])
 
   return (
     <div className="flex justify-between md:justify-around items-center py-4 px-8 bg-gray-950 text-green-500 text-lg">
@@ -24,7 +25,7 @@ export const Navbar = () => {
       <span onClick={() => setVisible(true)} className="bi-list text-3xl md:hidden cursor-pointer"></span>
 
       {/* Sidebar for Mobile */}
-      <div className={`fixed top-0 right-0 bottom-0 w-full bg-gray-900 text-gray-50 transition-transform duration-300 ease-in-out transform ${visible ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed top-0 right-0 bottom-0 w-full z-1 bg-gray-900 text-gray-50 transition-transform duration-300 ease-in-out transform ${visible ? 'translate-x-0' : 'translate-x-full'}`}>
 
         {/* Close Button */}
         <div onClick={() => setVisible(false)} className="flex items-center gap-2 text-lg px-4 py-2 cursor-pointer">

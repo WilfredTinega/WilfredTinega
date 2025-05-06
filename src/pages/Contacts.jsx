@@ -35,7 +35,7 @@ export default function Contacts() {
   };
 
   return (
-    <div className="contact-page bg-gray-900 text-white py-12 px-6 md:px-12">
+    <div className="min-h-screen bg-gray-900 text-white py-12 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-2xl md:text-3xl font-bold text-blue-500">

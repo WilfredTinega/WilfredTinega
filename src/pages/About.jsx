@@ -1,6 +1,4 @@
 import React from 'react'
-import Projects from './Projects'
-import Contacts from './Contacts'
 import { Assests } from '../assets/Assests';
 
 const About = () => {
@@ -156,8 +154,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Projects />
-      <Contacts />
     </>
   )
 }
