@@ -46,22 +46,15 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='hidden'>
+        <div className='text-gray-100 bg-gray-800 px-20 pt-20'>
 
-            <div>
-                <h1>element 1</h1>
-            </div>
-            <div>
-                <h1>element 3</h1>
-            </div>
-            <div>
-                <h1>element 2</h1>
-            </div>
-            <div>
-                <h1>element 4</h1>
-            </div>
-            <div>
-                <h1>element 5</h1>
+            <div> 
+                <h1 className='text-2xl'>Hobbies</h1>
+                <li>🎮 Gaming</li>
+                <li>📚 Reading sci-fi</li>
+                <li>🧗 Hiking</li>
+                <li>🎧 Music production</li>
+                <li>🌍 Learning languages</li>
             </div>
 
         </div>
