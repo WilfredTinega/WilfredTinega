@@ -3,7 +3,7 @@ import { Assests } from '../assets/Assests';
 
 const About = () => {
   return (
-    <>
+    <div className='min-h-screen'>
 
       {/* About Me */}
       <div className="py-12 px-2 md:px-10 lg:px-40 bg-gray-50 text-blue-500">
@@ -154,7 +154,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
