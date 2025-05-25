@@ -1,11 +1,14 @@
 import { Assests } from '../assets/Assests'
+import About from './About'
+import Contacts from './Contacts'
+import Projects from './Projects'
 
 const Home = () => {
   return (
     <div className='bg-gray-900 px-1'>
 
       {/** Hero Section */}
-      <div className='md:min-h-screen relative md:flex md:justify-center md:items-center md:p-10 md:gap-4'>
+      <div className='min-h-[80vh] md:min-h-screen relative md:flex md:justify-center md:items-center md:p-10 md:gap-4'>
         <img className='border-2 border-blue-500 md:w-1/3 md:rounded-full' src={Assests.wmt} alt="Wilfred Tinega Image" />
         <div className='backdrop-blur-sm absolute w-full md:static bottom-0 px-2 md:rounded-md'>
           <div className='text-green-500 text-2xl md:text-4xl font-bold  xl:text-5xl capitalize'>wilfred tinega</div>
@@ -60,17 +63,25 @@ const Home = () => {
         
       </div>
       
-      {/**  */}
-      <div></div>
+      {/**About */}
+      <div>
+        <About />
+      </div>
 
-      {/**  */}
-      <div></div>
+      {/**services */}
+      <div>
+        <p></p>
+      </div>
 
-      {/**  */}
-      <div></div>
+      {/**projects */}
+      <div>
+        <Projects/>
+      </div>
 
-      {/**  */}
-      <div></div>
+      {/** Contacts */}
+      <div>
+        <Contacts/>
+      </div>
 
       
     </div>
