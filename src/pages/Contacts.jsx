@@ -1,53 +1,48 @@
-import React from "react";
+import React from 'react'
+import { Assests } from '../assets/Assests';
 
-export default function Contacts() {
-  const [result, setResult] = React.useState("");
+const Contacts = () => {
+    const [result, setResult] = React.useState("");
 
-  const Message = async (event) => {
-    event.preventDefault();
-    setResult("Sending...");
-    const formData = new FormData(event.target);
+    const Message = async (event) => {
+      event.preventDefault();
+      setResult("Sending...");
+      const formData = new FormData(event.target);
 
-    const accessKey = '25e5b783-4aae-4a24-b547-4b32f5c405fe';
+      const accessKey = '25e5b783-4aae-4a24-b547-4b32f5c405fe';
 
-    if (!accessKey) {
-      console.error("API Key not found!");
-      setResult("API Key Error. Check configuration.");
-      return;
-    }
+      if (!accessKey) {
+        console.error("API Key not found!");
+        setResult("API Key Error. Check configuration.");
+        return;
+      }
 
-    formData.append("access_key", accessKey);
+      formData.append("access_key", accessKey);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    if (data.success) {
-      setResult("Your message was submitted successfully!");
-      event.target.reset();
-    } else {
-      console.error("Error", data);
-      setResult(data.message);
-    }
-  };
-
+      if (data.success) {
+        setResult("Your message was submitted successfully!");
+        event.target.reset();
+      } else {
+        console.error("Error", data);
+        setResult(data.message);
+      }
+    };
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-12 px-6 md:px-12">
-      <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-8">
-          <h1 className="text-2xl md:text-3xl font-bold text-blue-500">
-            Get in Touch
-          </h1>
-          <hr className="mt-4 border-green-500 w-1/4 mx-auto" />
+    <div className="min-h-screen bg-gray-900 text-white px-2 md:px-10 pb-3 grid grid-cols-1 md:grid-cols-2 items-center gap-2">
+      <div className="">
+        <div className="text-center mb-2">
+          <h1 className="text-xl md:text-2xl font-bold text-blue-500">Get in Touch</h1>
+          <hr className="mt-2 border-green-500 w-1/4 mx-auto" />
         </div>
 
-        <form
-          onSubmit={Message}
-          className="bg-gray-800 p-6 rounded-lg shadow-lg space-y-6"
-        >
+        <form onSubmit={Message} className="bg-gray-800 p-6 rounded-lg shadow-lg space-y-6">
           {/* Name and Email Fields */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
@@ -96,6 +91,10 @@ export default function Contacts() {
           </div>
         </form>
       </div>
+
+      <img className='bg-gray-900 hidden md:block scale-75' src={Assests.jquery} alt="jquery" />
     </div>
-  );
+  )
 }
+
+export default Contacts

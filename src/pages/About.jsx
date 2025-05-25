@@ -17,14 +17,13 @@ const About = () => {
         {/* Intro Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
 
-          <div className="shadow shadow-green-500 hover:shadow-blue-500 rounded-sm p-2">
+          <div className="shadow relative shadow-green-500 hover:shadow-blue-500 rounded-sm p-2">
             <div className="text-lg text-gray-700">
               <p>I'm Wilfred Tinega, a Front-End Web Developer.</p>
               <p>I utilize modern technlogies to build eye catching interfaces</p>
             </div>
-            <div className='flex justify-end '>
-              <img className="h-[100px] w-auto rounded-tl-full border-2" src={Assests.wmt} alt="Wilfred Tinega" />
-            </div>
+            
+            <img className="h-[40px] md:h-[75px] absolute bottom-0 right-0 w-auto rounded-full rounded-br-sm border-green-500 border-2 float-end  " src={Assests.wmt} alt="Wilfred Tinega" />
             
           </div>
 
@@ -106,52 +105,23 @@ const About = () => {
       </div>
 
       {/*Technologies*/}
-      <div className='bg-gray-900 p-2 pb-10'>
-        <div className="text-center mb-8">
+      <div className='bg-gray-900 pb-10 py-12 px-2 md:px-10 lg:px-40'>
+        <div className="text-center mb-2">
           <h1 className="text-4xl font-bold text-blue-400">Technologies</h1>
           <div className="h-1 w-16 bg-green-500 mx-auto mt-2 rounded"></div>
         </div>
 
-        <div className='flex gap-1 flex-wrap justify-center'>
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.js} alt="JavaScript" className="w-10 h-10 rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.html5} alt="HTML5" className="w-10 h-10 rounded-sm  hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.css} alt="CSS3" className="w-10 h-10 rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.bootstrap} alt="Bootstrap" className="w-10 h-10 rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.react} alt="React" className="w-10 h-10 rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.sass} alt="Sass" className="w-10 h-10  rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.git} alt="Git" className="w-10 h-10  rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.github} alt="GitHub" className="w-10 h-10 rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.jquery} alt="jQuery" className="w-10 h-10  rounded-sm hover:scale-110 transition-transform" />
-          </div>
-
-          <div className='p-2 bg-green-500 rounded-md'>
-            <img src={Assests.npm} alt="NPM" className="w-10 h-10  rounded-sm hover:scale-110 transition-transform" />
-          </div>
+        <div className='grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4'>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">React.js</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">JavaScript</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">HTML5</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">CSS3</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">SASS</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">NPM</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">JQUERY</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">GIT</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">GITHUB</div>
+          <div className="bg-blue-500 text-gray-100 py-1 px-4 hover:bg-white rounded-md hover:text-green-500 text-center md:text-xl font-bold">TailwindCSS</div>
         </div>
       </div>
     </div>

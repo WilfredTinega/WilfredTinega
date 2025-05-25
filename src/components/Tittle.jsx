@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Title = ({text1, text2}) => {
   return (
     <div className='flex justify-center gap-2 items-center mb-3'>

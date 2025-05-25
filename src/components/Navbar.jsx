@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {NavLink } from 'react-router-dom';
 
 export const Navbar = () => {
@@ -16,9 +16,9 @@ export const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex gap-6 text-xl capitalize">
         <NavLink to='/about'>about</NavLink>
+        <NavLink to='/services'>Services</NavLink>
         <NavLink to='/projects'>projects</NavLink>
         <NavLink to='/contacts'>contacts</NavLink>
-        <NavLink to='/more'>more</NavLink>
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -37,9 +37,9 @@ export const Navbar = () => {
         {/* Mobile Menu Links */}
         <div className="flex flex-col gap-2 p-5 text-xl">
           <NavLink onClick={() => setVisible(false)} className='text-green-500'  to='/about'>About</NavLink>
+          <NavLink onClick={() => setVisible(false)} className='text-green-500'  to='/services'>Services</NavLink>
           <NavLink onClick={() => setVisible(false)} className='text-green-500'  to='/projects'>Projects</NavLink>
           <NavLink onClick={() => setVisible(false)} className='text-green-500'  to='/contacts'>Contacts</NavLink>
-          <NavLink onClick={() => setVisible(false)} className='text-green-500'  to='/more'>More</NavLink>
         </div>
 
         <div className='fixed bottom-0 right-0 left-0 flex justify-center'>
